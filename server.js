@@ -50,6 +50,7 @@ http.createServer(function (req, res) {
       } else {
         // if the file is found, set Content-type and send data
         res.setHeader('Content-type', map[ext] || 'text/plain' );
+        res.setHeader('Cache-Control', 'max-age=3600');
         res.end(data);
       }
     });
