@@ -1,0 +1,54 @@
+# Logo
+logo_image_source: /img/rough_logo.jpg
+
+# Index Page
+index_banner_text: ReallyCare Blog
+index_banner_text_secondary: 
+index_font_awesome_icon_css: fa fa-folder-open
+
+# Header
+menu:
+  Home: /
+  About: /about/
+  Solutions: /solutions/
+  Contact: /contact/
+  Careers: /careers/
+  Blog: /blog/
+  # Archives: /archives
+  # Tags: /tags
+  # Categories: /categories
+
+# Post
+default_post_title: Untitled
+default_post_icon: fa-file-text-o
+date_format: DD/MM/YYYY
+
+# Archive Date Format
+archive_date_format: MMM YYYY
+archive_font_awesome_icon_css: fa-folder-open
+
+# About Widget
+about_widget_avatar_url: /img/mark_1_orig.jpg
+about_widget_text: "Mark Chapman"
+
+# Comments.
+comments:
+  # Disqus comments
+  # disqus_shortname: www-reallycare-org
+
+# Google Analytics Tracking ID
+google_analytics: UA-3037487-3
+
+# Social Media Platforms
+social_platforms:
+  - url: https://twitter.com/reallycare_mark
+    fa_icon: fa-twitter
+  - url: /contact/
+    fa_icon: fa-envelope
+  - url: https://github.com/reallycare
+    fa_icon: fa-github
+  - url: /#
+    fa_icon: fa-rss
+
+# Footer about
+footer_about: "(c) ReallyCare CIC 2019. All right reserved | Adapted from a design by Jonathan Klughertz"
