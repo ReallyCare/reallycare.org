@@ -1,5 +1,5 @@
 ---
-title: ReallyCare CIC
+title: reallycare CIC
 date: 2019-01-12 00:31:58
 icon: fa-home
 ---
@@ -8,7 +8,7 @@ icon: fa-home
 
 ​We believe that open source software is set to become a major force in all vertical ​markets in the next few years, not just technology, and social care will be no exception.
 ## News Update
-<span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> are pleased to announce a new partnership deal with [Bloomsbury Home Care](http://www.bloomsburyhomecare.com/), which will enable accelerated delivery of the full Plait Care Management solution.  Supported by <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span></span>, Bloomsbury are currently rolling out the cloud-based Plait Medication Management module across all of their services (including the mobile app for care workers), and will then upgrade to the full solution next year.
+<span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> are pleased to announce a new partnership deal with [Bloomsbury Home Care](http://www.bloomsburyhomecare.com/), which will enable accelerated delivery of the full Plait Care Management solution.  Supported by <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span></span>, Bloomsbury are currently rolling out the cloud-based Plait Medication Management module across all of their services (including the mobile app for care workers), and will then upgrade to the full solution.
  
 Nick Christodoulou, CEO of Bloomsbury, said "We recognised the need to modernise our care management systems and believe we have found the ideal partner in <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span></span>.  By getting involved at this stage, we'll be able to influence the development direction and ensure we get the solution we need to take us forward.  One key advantage for us is that care managers will be able to get instant alerts relating to medication issues and deal with them as they arise, and no longer rely on paper MAR sheets."
  

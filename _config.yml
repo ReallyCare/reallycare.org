@@ -109,7 +109,7 @@ theme_config:
   social_platforms:
     - url: https://twitter.com/reallycare_mark
       fa_icon: fa-twitter
-    - url: /contact/
+    - url: mailto:contact-now@reallycare.org
       fa_icon: fa-envelope
     - url: https://github.com/reallycare
       fa_icon: fa-github
