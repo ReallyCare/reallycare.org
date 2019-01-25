@@ -103,6 +103,7 @@ theme_config:
   about_widget_text: "Mark Chapman"
 
   # Google Analytics Tracking ID
+  # Warning!  This is also hard-coded source/scripts/reallycare.js
   google_analytics: UA-3037487-3
 
   # Social Media Platforms
