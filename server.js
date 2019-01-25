@@ -2,6 +2,7 @@ const http = require('http');
 const url = require('url');
 const fs = require('fs');
 const path = require('path');
+const csp = require('node-csp');
 const port = process.argv[2] || 3003;
 
 const map = {
@@ -19,8 +20,25 @@ const map = {
   '.doc': 'application/msword'
 };
 
+const options = {
+  directives: {
+    defaultSrc: ['self'],
+    styleSrc: ['self', 'unpkg.com','maxcdn.bootstrapcdn.com','unsafe-inline'],
+    imgSrc: ['self', 'i.creativecommons.org', 'licensebuttons.net', '*.google-analytics.com', '*.g.doubleclick.net'],
+    fontSrc: ['self', 'maxcdn.bootstrapcdn.com', 'data:'],
+    scriptSrc: ['self', 'cdnjs.cloudflare.com', '*.google-analytics.com']
+  }
+}
+
 http.createServer(function (req, res) {
   console.log(`${req.method} ${req.url}`);
+
+  // security headers
+  csp.add(req, res, options);
+  res.setHeader('Strict-Transport-Security', 'max-age=3600000');
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('X-XSS-Protection', '1; mode=block');
 
   // parse URL
   const parsedUrl = url.parse(req.url);
