@@ -35,7 +35,7 @@ http.createServer(function (req, res) {
 
   // security headers
   csp.add(req, res, options);
-  res.setHeader('Strict-Transport-Security', 'max-age=3600000');
+  res.setHeader('Strict-Transport-Security', 'max-age=15768000');
   res.setHeader('X-Content-Type-Options', 'nosniff');
   res.setHeader('X-Frame-Options', 'DENY');
   res.setHeader('X-XSS-Protection', '1; mode=block');
