@@ -1,5 +1,7 @@
 ---
 title: A Tale of Two Hacks
+description: Other government departments can make data available - why not the NHS?
+image: /img/rough_logo_transparent.png
 date: 2019-03-27 12:16:49
 tags:
   - transparency
