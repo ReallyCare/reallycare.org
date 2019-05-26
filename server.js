@@ -24,7 +24,7 @@ const options = {
   directives: {
     defaultSrc: ['self'],
     styleSrc: ['self', 'unpkg.com','maxcdn.bootstrapcdn.com','unsafe-inline'],
-    imgSrc: ['self', 'i.creativecommons.org', 'licensebuttons.net', '*.google-analytics.com', '*.g.doubleclick.net'],
+    imgSrc: ['self', 'upload.wikimedia.org', 'i.creativecommons.org', 'licensebuttons.net', '*.google-analytics.com', '*.g.doubleclick.net'],
     fontSrc: ['self', 'maxcdn.bootstrapcdn.com', 'data:'],
     scriptSrc: ['self', 'cdnjs.cloudflare.com', '*.google-analytics.com']
   }
@@ -40,6 +40,10 @@ http.createServer(function (req, res) {
   res.setHeader('X-Frame-Options', 'DENY');
   res.setHeader('X-XSS-Protection', '1; mode=block');
 
+  // Handle dodgy privacy url in shipped apps (plait-mobile)
+  if (req.url.indexOf('privacy.html') > -1) {
+    req.url = req.url.slice(0,-5)+'/';
+  }
   // parse URL
   const parsedUrl = url.parse(req.url);
   // extract URL path
