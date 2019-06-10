@@ -3,7 +3,7 @@ const url = require('url');
 const fs = require('fs');
 const path = require('path');
 const csp = require('node-csp');
-const port = process.argv[2] || 3003;
+const port = 3003;
 
 const map = {
   '.ico': 'image/x-icon',
@@ -30,6 +30,7 @@ const options = {
   }
 }
 
+console.log('a');
 http.createServer(function (req, res) {
   console.log(`${req.method} ${req.url}`);
 
