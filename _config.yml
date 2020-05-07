@@ -90,7 +90,7 @@ theme_config:
     About: /about/
     Solutions: /solutions/
     Contact: /contact/
-    Careers: /careers/
+    # Careers: /careers/
     # Blog: /blog/
     # Archives: /archives
     # Tags: /tags
