@@ -30,7 +30,6 @@ const options = {
   }
 }
 
-console.log('a');
 http.createServer(function (req, res) {
   console.log(`${req.method} ${req.url}`);
 
