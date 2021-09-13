@@ -12,5 +12,4 @@ icon: fa-home
 
 ReallyCare are pleased to announce the immediate availability of an interface to the PASS system from Everylife.
 
-This interface enables existing PASS system users to transition off their legacy scheduling systems onto a modern, well
-supported scheduling system without their care workers having to change a thing!
+This interface enables existing PASS system users to transition off their legacy scheduling systems onto a modern, well supported scheduling system without their care workers having to change a thing!
