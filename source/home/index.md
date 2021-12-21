@@ -10,6 +10,7 @@ icon: fa-home
 
 ## News Update
 
-ReallyCare are pleased to announce the immediate availability of an interface to the PASS system from Everylife.
+ReallyCare have joined the [Professional Record Standards Body](https://theprsb.org) partnership scheme. ![PRSB Logo](/img/PRSB-Partner-Logo.png).  We will be working towards becoming a "Quality Partner" in 2022.
+
 
 This interface enables existing PASS system users to transition off their legacy scheduling systems onto a modern, well supported scheduling system without their care workers having to change a thing!
