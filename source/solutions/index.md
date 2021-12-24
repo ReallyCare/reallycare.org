@@ -20,8 +20,12 @@ Comprehensive medication administration, in the office and at the point of care 
 If you would like to be a part of this project, perhaps with a view to implementing Plait
 ​at your care organisation, please [contact us](/contact/).
 
+## Plait Mobile
+Plait Mobile is the point of care system that works alongside Plait.
+<a href="https://play.google.com/store/apps/details?id=com.reallycare.plaitmobile"><img alt="Download from Play Store image" src="/img/play-store.svg" width="200"/></a>
+<a href="https://apps.apple.com/app/id1504994401"><img alt="Download from App Store image" src="/img/app-store.svg" width="200" /></a>
 ## Better Care Guide
-​The [Better Care Guide](https://www.bettercareguide.org) is a website which allows the public to search for care providers and comment on the care that they have experienced.  It is the only site of its kind that covers the whole of the UK, and the only one that is open source.  And it's free to everyone, including providers.
+​The Better Care Guide is a website which allows the public to search for care providers and comment on the care that they have experienced.  It is the only site of its kind that covers the whole of the UK, and the only one that is open source.  And it's free to everyone, including providers.
 
 ## Volunteer Manager
 Our first product was web software for managing volunteering organisations such as our own YouAngel community, which we have taken the decision to suspend indefinitely though we are keen to develop it further with partners in the public and third sectors (with a view to it becoming an open-source platform).
