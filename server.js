@@ -23,10 +23,10 @@ const map = {
 const options = {
   directives: {
     defaultSrc: ['self'],
-    styleSrc: ['self', 'unpkg.com','maxcdn.bootstrapcdn.com','unsafe-inline'],
-    imgSrc: ['self', 'upload.wikimedia.org', 'i.creativecommons.org', 'licensebuttons.net', '*.google-analytics.com', '*.g.doubleclick.net'],
+    styleSrc: ['self', 'unpkg.com','maxcdn.bootstrapcdn.com','unsafe-inline','*.mailchimp.com'],
+    imgSrc: ['self', 'upload.wikimedia.org', 'i.creativecommons.org', 'licensebuttons.net', '*.mailchimp.com', 'eep.io'],
     fontSrc: ['self', 'maxcdn.bootstrapcdn.com', 'data:'],
-    scriptSrc: ['self', 'cdnjs.cloudflare.com', '*.google-analytics.com']
+    scriptSrc: ['self', 'cdnjs.cloudflare.com',  's3.amazonaws.com',  "'sha256-EnleShJ5nz6/ZrucBUUEd0F7UfsxD+KRCXfGE/Zrh0g='", 'reallycare.us20.list-manage.com']
   }
 }
 
