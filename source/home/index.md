@@ -12,5 +12,5 @@ icon: fa-home
 Founder Mark was busy at the Health Plus Care show in London.  Here he is at the [Digital Social Care](https://twitter.com/DigiSocialCare) stand.
 <img alt="Mark Chapman and Katie Thorn a talking Digital Social Care" src="/img/MarkAndKatieThorn.jpeg" width="400" />.
 
-<span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> has joined the [Professional Record Standards Body](https://theprsb.org) partnership scheme. 
+<span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> has joined the [Professional Record Standards Body](https://theprsb.org) partnership scheme 
 <img alt="PRSB Logo" src="/img/PRSB-Partner-Logo.png" width="250" /> and has added support to Plait for two relevant standards - [About Me](https://theprsb.org/standards/aboutme/) and [Personalised care and support plan](https://theprsb.org/standards/personalisedcareandsupportplan/)

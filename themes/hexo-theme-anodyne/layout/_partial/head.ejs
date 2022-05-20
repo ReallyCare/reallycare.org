@@ -22,7 +22,7 @@
 
     <!--Open Graph Title-->
     <% if (page.title){ %>
-        <meta property="og:title" content="<%= page.title %>"/>
+        <meta property="og:title" content="<%= strip_html(page.title).replace(/^\s*/, '').replace(/\s*$/, '') %>"/>
     <% } else { %>
         <meta property="og:title" content="<%= config.title %>"/>
     <% } %>
@@ -60,7 +60,7 @@
     <%
         var title = [];
         if (page.current > 1) title.push(__('page', page.current));
-        if (page.title) title.push(page.title);
+        if (page.title) title.push(strip_html(page.title).replace(/^\s*/, '').replace(/\s*$/, ''));
         if (page.category) title.push(page.category);
         if (page.tag) title.push(page.tag);
         if (page.archive) {
