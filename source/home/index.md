@@ -10,7 +10,7 @@ icon: fa-home
 
 ## News Updates
 Founder Mark was busy at the Health Plus Care show in London.  Here he is at the [Digital Social Care](https://twitter.com/DigiSocialCare) stand.
-<img alt="Mark Chapman and Katie Thorn a talking Digital Social Care" src="/img/MarkAndKatieThorn.jpeg" width="400" />.
+<img alt="Mark Chapman and Katie Thorn a talking Digital Social Care" src="/img/MarkAndKatieThorn.jpeg" width="400" />
 Hopefully we will be able to announce some of what he was up to shortly...
 
 <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> has joined the [Professional Record Standards Body](https://theprsb.org) partnership scheme 
