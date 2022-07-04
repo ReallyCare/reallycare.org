@@ -4,7 +4,7 @@ date: 2020-04-19 18:09:14
 description:
 tags:
 - News
-- <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span></span> Users
+- ReallyCare Users
 categories:
 - Announcement
 ---
