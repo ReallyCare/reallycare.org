@@ -108,10 +108,12 @@ theme_config:
 
   # Social Media Platforms
   social_platforms:
-    - url: https://twitter.com/reallycare_mark
-      fa_icon: fa-twitter
     - url: https://www.youtube.com/channel/UC8xX655DqkikrifKdelkSmw
       fa_icon: fa-youtube
+    - url: https://mas.to/@reallycare
+      fa_icon: fa-twitter-square
+    - url: https://twitter.com/reallycare_mark
+      fa_icon: fa-twitter
     - url: https://github.com/reallycare
       fa_icon: fa-github
     - url: mailto:contact-now@reallycare.org
