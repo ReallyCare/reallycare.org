@@ -9,9 +9,20 @@ icon: fa-home
 ​We believe that open source software is set to become a major force in all vertical ​markets in the next few years, not just technology, and social care will be no exception.  Our flagship product Plait - for running homecare businesses - is built on open source libraries and will be open sourced itself.
 
 ## News Updates
-Founder Mark was busy at the Health Plus Care show in London.  Here he is at the [Digital Social Care](https://twitter.com/DigiSocialCare) stand.
-<img alt="Mark Chapman and Katie Thorn a talking Digital Social Care" src="/img/MarkAndKatieThorn.jpeg" width="400" />
-Hopefully we will be able to announce some of what he was up to shortly...
+<img alt="Health Plus Care logo" src="https://cdn.asp.events/CLIENT_CloserSt_D86EA381_5056_B739_5482D50A1A831DDD/sites/H-C-2019/media/HPC-logo.jpg.png" width="200"/>
 
-<span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> has joined the [Professional Record Standards Body](https://theprsb.org) partnership scheme 
-<img alt="PRSB Logo" src="/img/PRSB-Partner-Logo.png" width="250" /> and has added support to Plait for two relevant standards - [About Me](https://theprsb.org/standards/aboutme/) and [Personalised care and support plan](https://theprsb.org/standards/personalisedcareandsupportplan/)
+We will be back at the Health Plus Care show in London again this year - this time with a stand.  Please come and visit us at stand F61 on Wednesday 26th / Thursday 27th April.
+
+<img alt="John-Joe Cottam of Gardiner's Home Care" src="https://www.digitalsocialcare.co.uk/wp-content/uploads/2023/01/20221220_134545-855x374.jpg" />
+
+[Digital Social Care](https://twitter.com/DigiSocialCare) featured Gardiner's Home Care, who have been using Plait for a couple of years, as a [success story](https://www.digitalsocialcare.co.uk/success-story/gardiners-homecare-implementing-person-centred-technology/) on their website.
+
+<img alt="PRSB Logo" src="/img/PRSB-Partner-Logo.png" width="250" />
+
+<span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> has joined the [Professional Record Standards Body](https://theprsb.org) partnership scheme  and has added support to Plait for two relevant standards - [About Me](https://theprsb.org/standards/aboutme/) and [Personalised care and support plan](https://theprsb.org/standards/personalisedcareandsupportplan/)
+
+
+<img alt="Mark Chapman and Katie Thorn a talking Digital Social Care" src="/img/MarkAndKatieThorn.jpeg" width="400" />
+
+Founder Mark was been getting out and about at several trade shows recently.  Here he is visiting the [Digital Social Care](https://twitter.com/DigiSocialCare) stand at the Health Plus Care show in London.
+

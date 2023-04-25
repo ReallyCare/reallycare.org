@@ -24,7 +24,7 @@ const options = {
   directives: {
     defaultSrc: ['self'],
     styleSrc: ['self', 'unpkg.com','maxcdn.bootstrapcdn.com','unsafe-inline','*.mailchimp.com'],
-    imgSrc: ['self', 'upload.wikimedia.org', 'i.creativecommons.org', 'licensebuttons.net', '*.mailchimp.com', 'eep.io'],
+    imgSrc: ['self', 'upload.wikimedia.org', 'i.creativecommons.org', 'licensebuttons.net', '*.mailchimp.com', 'eep.io', 'www.digitalsocialcare.co.uk', 'cdn.asp.events'],
     fontSrc: ['self', 'maxcdn.bootstrapcdn.com', 'data:'],
     scriptSrc: ['self', 'cdnjs.cloudflare.com',  's3.amazonaws.com',  "'sha256-EnleShJ5nz6/ZrucBUUEd0F7UfsxD+KRCXfGE/Zrh0g='", 'reallycare.us20.list-manage.com']
   }
