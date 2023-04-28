@@ -9,9 +9,9 @@ icon: fa-home
 ​We believe that open source software is set to become a major force in all vertical ​markets in the next few years, not just technology, and social care will be no exception.  Our flagship product Plait - for running homecare businesses - is built on open source libraries and will be open sourced itself.
 
 ## News Updates
-<img alt="Health Plus Care logo" src="https://cdn.asp.events/CLIENT_CloserSt_D86EA381_5056_B739_5482D50A1A831DDD/sites/H-C-2019/media/HPC-logo.jpg.png" width="200"/>
+<img alt="Mark Chapman welcomes Jane Townson, CEO, Care Association to the ReallyCare stand" src="/img/MarkAndJaneTownson.jpg" width="400" />
 
-We will be back at the Health Plus Care show in London again this year - this time with a stand.  Please come and visit us at stand F61 on Wednesday 26th / Thursday 27th April.
+We enjoyed meeting old friends and making new contacts at the Health Plus Care show in the Excel Centre.  Despite being very busy chairing the proceedings in the Homecare Theatre, Jane Townson - CEO of the Care Association found time to vist the stand where she was welcomed by <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> Founder, Mark.
 
 <img alt="John-Joe Cottam of Gardiner's Home Care" src="https://www.digitalsocialcare.co.uk/wp-content/uploads/2023/01/20221220_134545-855x374.jpg" />
 
