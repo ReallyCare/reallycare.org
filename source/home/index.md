@@ -9,7 +9,7 @@ icon: fa-home
 ​We believe that open source software is set to become a major force in all vertical ​markets in the next few years, not just technology, and social care will be no exception.  Our flagship product Plait - for running homecare businesses - is built on open source libraries and will be open sourced itself.
 
 ## News Updates
-<img alt="Mark Chapman welcomes Jane Townson, CEO, Care Association to the ReallyCare stand" src="/img/MarkAndJaneTownson.jpg" width="400" />
+<img alt="Mark Chapman welcomes Jane Townson, CEO, Care Association to the ReallyCare stand" src="/img/MarkAndJaneTownson.jpg" />
 
 We enjoyed meeting old friends and making new contacts at the Health Plus Care show in the Excel Centre.  Despite being very busy chairing the proceedings in the Homecare Theatre, Jane Townson - CEO of the Care Association found time to vist the stand where she was welcomed by <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> Founder, Mark.
 
@@ -22,7 +22,7 @@ We enjoyed meeting old friends and making new contacts at the Health Plus Care s
 <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> has joined the [Professional Record Standards Body](https://theprsb.org) partnership scheme  and has added support to Plait for two relevant standards - [About Me](https://theprsb.org/standards/aboutme/) and [Personalised care and support plan](https://theprsb.org/standards/personalisedcareandsupportplan/)
 
 
-<img alt="Mark Chapman and Katie Thorn a talking Digital Social Care" src="/img/MarkAndKatieThorn.jpeg" width="400" />
+<img alt="Mark Chapman and Katie Thorn a talking Digital Social Care" src="/img/MarkAndKatieThorn.jpeg"/>
 
 Founder Mark was been getting out and about at several trade shows recently.  Here he is visiting the [Digital Social Care](https://twitter.com/DigiSocialCare) stand at the Health Plus Care show in London.
 
