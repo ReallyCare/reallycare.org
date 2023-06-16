@@ -9,7 +9,7 @@ icon: fa-home
 ​We believe that open source software is set to become a major force in all vertical ​markets in the next few years, not just technology, and social care will be no exception.  Our flagship product Plait - for running homecare businesses - is built on open source libraries and will be open sourced itself.
 
 ## News Updates
-The [June 2023 Homecare magazine](https://www.homecareassociation.org.uk/resource/homecare-magazine-june-2023-edition.html) \[firewall\] contains an article about our key values and how they apply to Homecare by our founder Mark Chapman entitled "All things open".
+The [June 2023 Homecare magazine](https://www.homecareassociation.org.uk/resource/homecare-magazine-june-2023-edition.html) \[paywall\] contains an article about our key values and how they apply to Homecare by our founder Mark Chapman entitled "All things open".
 
 <img alt="Mark Chapman welcomes Jane Townson, CEO, Care Association to the ReallyCare stand" src="/img/MarkAndJaneTownson.jpg" />
 
