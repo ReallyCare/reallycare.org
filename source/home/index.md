@@ -8,7 +8,7 @@ icon: fa-home
 
 ​We believe that open source software is set to become a major force in all vertical ​markets in the next few years, not just technology, and social care will be no exception.  Our flagship product Plait - for running homecare businesses - is built on open source libraries and will be open sourced itself.
 
-As we are a not for profit company, anything we make from our software is either re-invested into improving our products and services or donated to worthy organisations in the care space.  SO far the small amount of profit we have made has been contributed to a [local dementia charity](https://tn22clubs.org/).
+As we are a not for profit company, anything we make from our software is either re-invested into improving our products and services or donated to worthy organisations in the care space.  So far the small amount of profit we have made has been contributed to a [local dementia charity](https://tn22clubs.org/).
 
 ## News Updates
 
