@@ -13,7 +13,9 @@ icon: fa-home
 As we are a not for profit company, anything we make from our software is either re-invested into improving our products and services or donated to worthy organisations in the care space.  So far the small amount of profit we have made has been contributed to a [local dementia charity](https://tn22clubs.org/).
 </div>
 <div class="w-20">
+<a href="https://www.socialenterprise.org.uk/" target="_blank">
 <img alt="Certified Social Enterprise" src="/img/SEUK.png"/>
+</a>
 </div>
 </div>
 
