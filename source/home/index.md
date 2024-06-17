@@ -4,11 +4,18 @@ date: 2019-01-12 00:31:58
 icon: fa-home
 ---
 ## Our Mission
+<div class="flex">
+<div class="w-80 mr2">
 <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> is a social enterprise on a mission: to use open standards, open source software, open data, and anything else open and transparent, to improve Adult Social Care. 
 
 ​We believe that open source software is set to become a major force in all vertical ​markets in the next few years, not just technology, and social care will be no exception.  Our flagship product Plait - for running homecare businesses - is built on open source libraries and will be open sourced itself.
 
 As we are a not for profit company, anything we make from our software is either re-invested into improving our products and services or donated to worthy organisations in the care space.  So far the small amount of profit we have made has been contributed to a [local dementia charity](https://tn22clubs.org/).
+</div>
+<div class="w-20">
+<img alt="Certified Social Enterprise" src="/img/SEUK.png"/>
+</div>
+</div>
 
 ## News Updates
 
