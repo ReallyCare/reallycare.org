@@ -13,4 +13,4 @@ Our care planing features were developed with the aid of a Catalyst grant from t
 
 ![Uptime Robot logo](/img/uptimerobot-logo-dark.svg) 
 
-Our servers are monitored 24/7 by [UptimeRobot](https://uptimerobot.com/UptimeRobot).
+Our servers are monitored 24/7 by [UptimeRobot](https://uptimerobot.com).
