@@ -21,6 +21,6 @@
     "node-csp": "^1.0.1"
   },
   "scripts": {
-    "build": "if [ -f ./db.json ]; then rm ./db.json; fi && hexo generate && mv public/home/index.html public/ && mv public/index.html public/blog/"
+    "build": "if [ -f ./db.json ]; then rm ./db.json; fi && hexo generate && mv public/index.html public/blog/ && mv public/home/index.html public/",
   }
 }
