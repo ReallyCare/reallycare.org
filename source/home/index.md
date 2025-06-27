@@ -21,7 +21,7 @@ As we are a not for profit company, anything we make from our software is either
 
 ## News Updates
 
-Not exactly big news, but we have finally been forced to spend much more money than was sensible (but the least we could) to get someone to mark our homework to get an actual (well - virtual) [Cyber Essentials Plus certificate](https://registry.blockmarktech.com/certificates/5606c33c-93ae-4bf5-9c01-62fd11f4943b/?share_key=vk1Q-s5QbxG6VHoI87aGtffKheP9HqXrHID1V7d59pk).  It is one of the mandatory requirements to get on the Assured Suppliers List, which we aim to do as soon as possible.
+Not exactly big news, but we have finally been forced to spend much more money than was sensible (but the least we could) to get someone to mark our homework to get an actual (well - virtual) [Cyber Essentials Plus certificate](https://registry.blockmarktech.com/certificates/91268a25-8482-4e45-a46a-e3851e64928a/).  It is one of the mandatory requirements to get on the Assured Suppliers List, which we aim to do as soon as possible.
 
 The June 2023 Homecare magazine (the member magazine of the [Homecare Association](https://homecareassociation.org.uk)) contains an article about our key values and how they apply to Homecare by our founder Mark Chapman entitled "All things open".  If you are not a member of the Homecare Association you can download the article [here](img/HomecareJune2023AllThingsOpen.pdf).
 
