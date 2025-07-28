@@ -38,15 +38,10 @@ We enjoyed meeting old friends and making new contacts at the Health Plus Care s
 Founder Mark has been getting out and about at several trade shows recently.  Here he is visiting the [Digital Social Care](https://twitter.com/DigiSocialCare) stand at the Health Plus Care show in London.
 
 ## Partnerships
-<table>
+<table id="partners">
   <tr>
-    <td>Affiliate member of the <a href="https://homecareassociation.org.uk" target="_blank">Homecare Association</a></td>
-    <td><a href="https://www.nationalcareforum.org.uk/" target="_blank">National Care Forum</a> Partner</td>
-     <td><a href="https://theprsb.org" target="_blank">PRSB Partner</a></td>
-  </tr>
-  <tr>
-    <td><a href="https://homecareassociation.org.uk" target="_blank"><img alt="Homecare Association Logo" src="/img/HCA_Aff_Logo_Portrait_RGB.png"/></a></td>
-    <td><a href="https://www.nationalcareforum.org.uk/" target="_blank"><img alt="NCF logo" src="/img/NCF logo 2019 (large).png" width="250" /></a></td>
+    <td><a href="https://homecareassociation.org.uk" target="_blank"><img alt="Homecare Association Logo" src="/img/HCA_Aff_Logo_Portrait_RGB.png" width="250"/></a></td>
+    <td><a href="https://www.nationalcareforum.org.uk/" target="_blank"><img alt="NCF logo" src="/img/NCF_logo.png" width="250" /></a></td>
     <td><a href="https://theprsb.org" target="_blank"><img alt="PRSB Logo" src="/img/PRSB-Partner-Logo.png" width="250" /></a></td>
   </tr>
 </table>
