@@ -33,6 +33,10 @@ The most modern way to manage client medication, in the office and at the point 
 
 A slick, automated way of managing your applicants and your whole recruitment workflow
 
+### Compliance and Workflow
+
+A flexible, completely integrated way of handling all your miscellaneous requirements like accident recording, complaint handling - and anything else you have a spreadsheet for!
+
 ## Point of Care
 
 A modern system for use at the Point of Care (or elsewhere).  It can be used by
