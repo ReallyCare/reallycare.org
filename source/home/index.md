@@ -29,8 +29,6 @@ The June 2023 Homecare magazine (the member magazine of the [Homecare Associatio
 
 We enjoyed meeting old friends and making new contacts at the Health Plus Care show in the Excel Centre.  Despite being very busy chairing the proceedings in the Homecare Theatre, Jane Townson - CEO of the Care Association found time to vist the stand where she was welcomed by <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> founder, Mark.
 
-<img alt="PRSB Logo" src="/img/PRSB-Partner-Logo.png" width="250" />
-
 <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> has joined the [Professional Record Standards Body](https://theprsb.org) partnership scheme  and has added support to Plait for two relevant standards - [About Me](https://theprsb.org/standards/aboutme/) and [Personalised care and support plan](https://theprsb.org/standards/personalisedcareandsupportplan/)
 
 <img alt="Mark Chapman and Katie Thorn a talking Digital Social Care" src="/img/MarkAndKatieThorn.jpeg"/>
@@ -40,8 +38,8 @@ Founder Mark has been getting out and about at several trade shows recently.  He
 ## Partnerships
 <table id="partners">
   <tr>
-    <td><a href="https://homecareassociation.org.uk" target="_blank"><img alt="Homecare Association Logo" src="/img/HCA_Aff_Logo_Portrait_RGB.png" width="250"/></a></td>
-    <td><a href="https://www.nationalcareforum.org.uk/" target="_blank"><img alt="NCF logo" src="/img/NCF_logo.png" width="250" /></a></td>
-    <td><a href="https://theprsb.org" target="_blank"><img alt="PRSB Logo" src="/img/PRSB-Partner-Logo.png" width="250" /></a></td>
+    <td><a href="https://homecareassociation.org.uk" target="_blank"><img alt="Homecare Association Logo" src="/img/HCA_Aff_Logo_Portrait_RGB.png"/></a></td>
+    <td><a href="https://www.nationalcareforum.org.uk/" target="_blank"><img alt="NCF logo" src="/img/NCF_logo.png"/></a></td>
+    <td><a href="https://theprsb.org" target="_blank"><img alt="PRSB Logo" src="/img/PRSB-Partner-Logo.png"/></a></td>
   </tr>
 </table>
