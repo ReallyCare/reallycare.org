@@ -109,7 +109,7 @@ theme_config:
 
   # Social Media Platforms
   social_platforms:
-    - url: https://www.youtube.com/channel/UC8xX655DqkikrifKdelkSmw
+    - url: https://www.youtube.com/@reallycare
       fa_icon: fa-youtube
     - url: https://mas.to/@reallycare
       fa_icon: fa-twitter-square
