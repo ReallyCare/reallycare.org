@@ -21,8 +21,6 @@ As we are a not for profit company, anything we make from our software is either
 
 ## News Updates
 
-Not exactly big news, but we have finally been forced to spend much more money than was sensible (but the least we could) to get someone to mark our homework to get an actual (well - virtual) [Cyber Essentials Plus certificate](https://registry.blockmarktech.com/certificates/91268a25-8482-4e45-a46a-e3851e64928a/).  It is one of the mandatory requirements to get on the Assured Suppliers List, which we aim to do as soon as possible.  We have exceeded the required standards for the [DSPT](https://www.dsptoolkit.nhs.uk/Publications/226700). 
-
 The June 2023 Homecare magazine (the member magazine of the [Homecare Association](https://homecareassociation.org.uk)) contains an article about our key values and how they apply to Homecare by our founder Mark Chapman entitled "All things open".  If you are not a member of the Homecare Association you can download the article [here](img/HomecareJune2023AllThingsOpen.pdf).
 
 <img alt="Mark Chapman welcomes Jane Townson, CEO, Care Association to the ReallyCare stand" src="/img/MarkAndJaneTownson.jpg" />
@@ -35,11 +33,16 @@ We enjoyed meeting old friends and making new contacts at the Health Plus Care s
 
 Founder Mark has been getting out and about at several trade shows recently.  Here he is visiting the [Digital Social Care](https://twitter.com/DigiSocialCare) stand at the Health Plus Care show in London.
 
-## Partnerships
+## Partnerships and Standards
 <table id="partners">
   <tr>
     <td><a href="https://homecareassociation.org.uk" target="_blank"><img alt="Homecare Association Logo" src="/img/HCA_Aff_Logo_Portrait_RGB.png"/></a></td>
     <td><a href="https://www.nationalcareforum.org.uk/" target="_blank"><img alt="NCF logo" src="/img/NCF_logo.png"/></a></td>
     <td><a href="https://theprsb.org" target="_blank"><img alt="PRSB Logo" src="/img/PRSB-Partner-Logo.png"/></a></td>
   </tr>
+<tr>
+  <td><a href="/img/ISO9001_27001Certificate.pdf" target="_blank"><img alt="ISO 9001 logo" src="/img/ISO9001_27001.png"/></a></td>
+  <td><a href="https://registry.blockmarktech.com/certificates/91268a25-8482-4e45-a46a-e3851e64928a/" target="_blank"><img alt="Cyber Essentials Plus logo" src="/img/ceplus.webp" w/></a></td>
+  <td><a href="https://www.dsptoolkit.nhs.uk/OrganisationSearch/X5F0Z" target="_blank">DSP Toolkit</a></td>
+</tr>
 </table>
