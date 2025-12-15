@@ -43,6 +43,6 @@ Founder Mark has been getting out and about at several trade shows recently.  He
 <tr>
   <td><a href="/img/ISO9001_27001Certificate.pdf" target="_blank"><img alt="ISO 9001 logo" src="/img/ISO9001_27001.png"/></a></td>
   <td><a href="https://registry.blockmarktech.com/certificates/91268a25-8482-4e45-a46a-e3851e64928a/" target="_blank"><img alt="Cyber Essentials Plus logo" src="/img/ceplus.webp" w/></a></td>
-  <td><a href="https://www.dsptoolkit.nhs.uk/OrganisationSearch/X5F0Z" target="_blank">DSP Toolkit</a></td>
+  <td><a href="https://www.dsptoolkit.nhs.uk/OrganisationSearch/X5F0Z" target="_blank"><img alt="DSPT logo" src="/img/dspt_img.png" /></a></td>
 </tr>
 </table>
