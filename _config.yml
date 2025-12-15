@@ -121,7 +121,7 @@ theme_config:
       fa_icon: fa-envelope
 
   # Footer about
-  footer_about: "(c) ReallyCare CIC 2022 | Adapted from a design by Jonathan Klughertz"
+  footer_about: "(c) ReallyCare CIC 2022-25 | Adapted from a design by Jonathan Klughertz"
 
 
 # Deployment
