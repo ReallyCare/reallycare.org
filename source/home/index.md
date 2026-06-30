@@ -21,17 +21,17 @@ As we are a not for profit company, anything we make from our software is either
 
 ## News Updates
 
-The June 2023 Homecare magazine (the member magazine of the [Homecare Association](https://homecareassociation.org.uk)) contains an article about our key values and how they apply to Homecare by our founder Mark Chapman entitled "All things open".  If you are not a member of the Homecare Association you can download the article [here](img/HomecareJune2023AllThingsOpen.pdf).
+The Homecare magazine (the member magazine of the [Homecare Association](https://homecareassociation.org.uk)) contains an article about our key values and how they apply to Homecare by our founder Mark Chapman entitled "All things open".  If you are not a member of the Homecare Association you can download the article [here](img/HomecareJune2023AllThingsOpen.pdf).
 
 <img alt="Mark Chapman welcomes Jane Townson, CEO, Care Association to the ReallyCare stand" src="/img/MarkAndJaneTownson.jpg" />
 
-We enjoyed meeting old friends and making new contacts at the Health Plus Care show in the Excel Centre.  Despite being very busy chairing the proceedings in the Homecare Theatre, Jane Townson - CEO of the Care Association found time to vist the stand where she was welcomed by <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> founder, Mark.
+We enjoyed meeting old friends and making new contacts at the London Care show in the Excel Centre.  Despite being very busy chairing the proceedings in the Homecare Theatre, Jane Townson - CEO of the Care Association found time to vist the stand where she was welcomed by <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> founder, Mark.
 
 <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> has joined the [Professional Record Standards Body](https://theprsb.org) partnership scheme  and has added support to Plait for two relevant standards - [About Me](https://theprsb.org/standards/aboutme/) and [Personalised care and support plan](https://theprsb.org/standards/personalisedcareandsupportplan/)
 
 <img alt="Mark Chapman and Katie Thorn a talking Digital Social Care" src="/img/MarkAndKatieThorn.jpeg"/>
 
-Founder Mark has been getting out and about at several trade shows recently.  Here he is visiting the [Digital Social Care](https://twitter.com/DigiSocialCare) stand at the Health Plus Care show in London.
+Founder Mark has been getting out and about at several trade shows recently.  Here he is visiting the [Digital Social Care](https://twitter.com/DigiSocialCare) stand at the London Care show.
 
 ## Partnerships and Standards
 <table id="partners">
