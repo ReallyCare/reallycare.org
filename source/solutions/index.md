@@ -5,9 +5,8 @@ date: 2019-01-11 20:59:42
 ---
 ## Plait (Home Care Management)
 
-[Plait](https://www.plaitapp.org)  is an end-to-end next generation community care management solution.  Truly multi-platform (desktop, tablet, mobile), Plait is the culmination of years of experience in designing and delivering IT platforms for social care providers.
-​
-Plait is built on open source technologies, and, when it is all production ready, it will be open sourced itself.  That means that you don't necessarily need to be dependent on <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> (unless you want to be) and can make whatever changes you want to the software.  Our [YouTube channel](https://www.youtube.com/channel/UC8xX655DqkikrifKdelkSmw) will give you a good idea of what it is like.  Start with a 10 minute introduction [here](https://youtu.be/DN78wkst6uc).
+[Plait](https://www.plaitapp.org)  is an end-to-end next generation community care management solution.  Truly multi-platform (desktop, tablet, mobile), Plait is the culmination of years of experience in designing and delivering IT platforms for social care providers. 
+Plait is built on open source technologies, and, <span style="text-decoration: underline dashed;" title="There is no fixed time frame for this, and we are monitoring the impact of AI on cyber security.  But if this matters to you, and you have development resource inhouse - please contact us">in due course</span>, it will be open sourced itself.  That means that you don't necessarily need to be dependent on <span style="font-size: large; color:#ad1340">really<span style="font-weight:bold">care</span> CIC</span> (unless you want to be) and can make whatever changes you want to the software.  Our [YouTube channel](https://www.youtube.com/channel/UC8xX655DqkikrifKdelkSmw) will give you a good idea of what it is like.  Start with a 10 minute introduction [here](https://youtu.be/DN78wkst6uc).
 
 Don't take our word for it - one of our users has a [Success Story](https://www.digitalcarehub.co.uk/success-story/gardiners-homecare-implementing-person-centred-technology/) on the DigitalCare Hub website.
 
@@ -36,6 +35,18 @@ A slick, automated way of managing your applicants and your whole recruitment wo
 ### Compliance and Workflow
 
 A flexible, completely integrated way of handling all your miscellaneous requirements like accident recording, complaint handling - and anything else you have a spreadsheet for!
+
+### Policies and Regulations
+
+A centralised place to manage all your policies and regulations, which are then available to care workers on the Point of Care system
+
+### Immediate Messaging
+
+Worried about where WhatsApp stores your messages?  Our messaging system is completely integrated with the point of care system
+
+### Surveys
+
+Annual (or more frequent) surveys are a breeze with Plait.  See what your clients and care workers are saying about your services
 
 ## Point of Care
 
