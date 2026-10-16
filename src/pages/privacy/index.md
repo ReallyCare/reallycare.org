@@ -2,15 +2,13 @@
 layout: ../../layouts/Prose.astro
 title: "Privacy policy"
 description: "How ReallyCare CIC collects, uses and protects personal data."
-updated: "[CHECK: date of approval]"
+updated: "16 Oct 2026"
 ---
-<p class="draft-warning"><strong>DRAFT. Not yet approved.</strong> Items marked [CHECK] need confirming before this page goes live.</p>
-
 This policy explains how ReallyCare CIC ("we", "us") collects and uses personal data when you visit this website, contact us, or use Plait.
 
 ## Who we are
 
-ReallyCare CIC is a community interest company registered in England and Wales [CHECK: company number]. Our address is Gate House, Stockland Lane, Hadlow Down, Uckfield, TN22 4EA. We are registered with the Information Commissioner's Office [CHECK: ICO registration number].
+ReallyCare CIC is a community interest company registered in England and Wales 07721795. Our address is Gate House, Stockland Lane, Hadlow Down, Uckfield, TN22 4EA. We are registered with the Information Commissioner's Office Z2802833.
 
 For any question about this policy or your data, email [contact-now@reallycare.org](mailto:contact-now@reallycare.org).
 
@@ -22,17 +20,17 @@ To ask about the records held about you in Plait, contact your care provider fir
 
 ## Data we collect through this website
 
-**When you request a demo** we collect your name, work email, organisation, phone number and anything you tell us in your message. We use it only to arrange and follow up your demo. Your request is sent by email, using Amazon Web Services (in the UK), to our support system. Our lawful basis is legitimate interests: responding to an enquiry you made. [CHECK: how long demo enquiries are kept, e.g. "We delete enquiries that don't lead to a contract after 2 years."]
+**When you request a demo** we collect your name, work email, organisation, phone number and anything you tell us in your message. We use it only to arrange and follow up your demo. Your request is sent by email, using Amazon Web Services (in the UK), to our support system. Our lawful basis is legitimate interests: responding to an enquiry you made. We delete enquiries that don't lead to a contract after 2 years.
 
-**When you join our mailing list** we collect your email address. We use it to send occasional news about Plait and ReallyCare. Our lawful basis is your consent, which you can withdraw at any time using the unsubscribe link in every email. Our mailing list is run by Mailchimp (Intuit Inc.), which stores data in the United States under the UK Extension to the EU–US Data Privacy Framework [CHECK: confirm Mailchimp’s current transfer mechanism].
+**When you join our mailing list** we collect your email address. We use it to send occasional news about Plait and ReallyCare. Our lawful basis is your consent, which you can withdraw at any time using the unsubscribe link in every email. Our mailing list is run by Mailchimp (Intuit Inc.), which stores data in the United States under the terms stated in the INternaional Transfers section of their [Data Processing Addendum](https://mailchimp.com/legal/data-processing-addendum).
 
 **When you email us** we use what you send to reply to you.
 
-**When you apply for a job** we use your CV only to consider your application. [CHECK: how long CVs are kept.]
+**When you apply for a job** we use your CV only to consider your application. CVs of failed applicants may be kept on file for up to six months.
 
 ## Data collected automatically
 
-Like all web servers, ours records basic details of each request, such as your IP address, the page requested and your browser type, so that we can keep the site running securely. [CHECK: how long web server logs are kept.] We do not use any analytics or tracking services.
+Like all web servers, ours records basic details of each request, such as your IP address, the page requested and your browser type, so that we can keep the site running securely.  We do not use any analytics or tracking services.
 
 ## Cookies
 
