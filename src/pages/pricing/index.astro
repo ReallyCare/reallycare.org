@@ -8,7 +8,7 @@ const terms = [
   { big: '15p', title: 'Maximum per care hour', text: 'You pay for the care you deliver, not for how many people use Plait.' },
   { big: 'Less', title: 'For longer visits', text: 'Longer visits such as sleepovers are charged at a lower rate.' },
   { big: '£75', title: 'Minimum per month', text: 'Small services pay a flat £75 a month until their care hours pass that amount.' },
-  { big: '£0', title: 'Setup fee', text: 'There is no setup fee. If you would like help getting started, paid setup assistance is available.' },
+  { big: '£0', title: 'Setup fee', text: 'There is no setup fee. If you would like help getting started, setup assistance is charged by the time it takes.' },
 ];
 
 const faqs = [
@@ -16,7 +16,8 @@ const faqs = [
   { q: 'Are any features charged as extras?', a: 'No. Every feature of Plait is included in the price per care hour.' },
   { q: 'Is there a minimum charge?', a: 'Yes. The minimum charge is £75 a month.' },
   { q: 'Are sleepovers charged at 15p an hour?', a: 'No. Longer visits such as sleepovers are discounted, so 15p is the most you will pay for any care hour.' },
-  { q: 'Is there a setup fee?', a: 'No. We do offer paid setup assistance if you would like help moving your data across and getting your team trained.' },
+  { q: 'Is there a setup fee?', a: 'No. If you would like help moving your data across and training your team, we offer setup assistance. It is charged by the time it takes.' },
+  { q: 'Do I have to sign a contract?', a: 'No. There is no contract, so you can pay month by month. If you pay for several months at a time, discounts are available. We can explain these in your demo.' },
 ];
 ---
 <Base
@@ -28,7 +29,7 @@ const faqs = [
       <div>
         <span class="eyebrow">Pricing</span>
         <h1>Never more than <span class="hl">15p</span> per care hour</h1>
-        <p class="lede">One simple price that includes every feature and every user. You pay for the care you deliver, so your costs grow only as your service grows.</p>
+        <p class="lede">One simple price that includes every feature and every user, with no contract. You pay for the care you deliver, so your costs grow only as your service grows.</p>
       </div>
       <PriceCalculator />
     </div>

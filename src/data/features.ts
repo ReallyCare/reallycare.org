@@ -96,9 +96,10 @@ export const officeFeatures: Feature[] = [
     id: 'messaging',
     icon: '💬',
     title: 'Secure messaging',
-    summary: 'Messaging built into the point-of-care app, so client details stay with you, not on WhatsApp.',
+    summary: 'Messaging between the office and care workers, so client details stay with you, not on WhatsApp.',
     points: [
-      'Worried about where WhatsApp stores your messages? Plait’s messaging is built into the point-of-care app',
+      'Secure messaging between the office and care workers, built into Plait and the point-of-care app',
+      'Worried about where WhatsApp stores your messages? With Plait, you don’t need it',
       'When a care worker leaves, your messages about clients don’t leave with them',
     ],
   },
@@ -114,7 +115,7 @@ export const officeFeatures: Feature[] = [
 export const pointOfCare = [
   {
     title: 'Care workers',
-    text: 'See their rota and each client’s care plan, including recent changes, and record medication and completed tasks.',
+    text: 'See their rota and each client’s care plan, including recent changes, record medication and completed tasks, and message the office.',
   },
   {
     title: 'Clients and families',
