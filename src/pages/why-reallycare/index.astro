@@ -48,13 +48,13 @@ const certs = [
       <div>
         <h2>We know homecare from the inside</h2>
         <p class="lede">Our founder, Mark Chapman, has built software for social care since 1987. He also co-managed a domiciliary care provider for several years, so Plait is designed around how a homecare office really works.</p>
-        <div class="founder card">
-          <img src="/img/mark_1_orig.jpg" alt="Mark Chapman" width="104" height="124" />
-          <div>
-            <strong>Mark Chapman, founder and CEO</strong>
+        <figure class="founder card">
+          <img src="/img/mark-jane-townson.webp" alt="Mark Chapman with Dr Jane Townson on the ReallyCare stand" width="1400" height="927" loading="lazy" />
+          <figcaption>
+            <strong>Mark Chapman, founder and CEO</strong> (left), welcoming Dr Jane Townson, CEO of the Homecare Association, to our stand at the London Care Show.
             <p>Mark has founded and led two successful care technology businesses, one of which featured in the Deloitte UK Technology Fast 50 in consecutive years. He was made a Fellow of the RSA in 2008.</p>
-          </div>
-        </div>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -137,9 +137,11 @@ const certs = [
   .n { font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5rem); line-height: .9; color: var(--magenta); opacity: .35; font-weight: var(--display-weight); }
   .reason .lede { max-width: 60ch; }
 
-  .founder { display: flex; gap: 20px; align-items: flex-start; margin-top: 24px; padding: 20px; }
-  .founder img { width: 72px; height: 86px; object-fit: cover; border-radius: var(--radius-sm); flex: none; }
-  .founder p { margin: 6px 0 0; color: var(--ink-soft); }
+  .founder { margin: 32px 0 0; padding: 0; overflow: hidden; }
+  .founder img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 30%; }
+  .founder figcaption { padding: 20px 24px 24px; color: var(--ink-soft); font-size: .95rem; }
+  .founder strong { color: var(--ink); }
+  .founder p { margin: 10px 0 0; }
 
   .ticks { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 10px; }
   .ticks li { padding-left: 28px; position: relative; color: var(--ink-soft); }
