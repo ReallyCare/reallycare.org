@@ -148,11 +148,13 @@ const badges = [
         <p>Prefer email? Write to <a href="mailto:contact-now@reallycare.org">contact-now@reallycare.org</a></p>
       </div>
       <form class="card form" method="post" action="/api/demo">
-        <label>Your name <input name="name" required autocomplete="name" /></label>
-        <label>Work email <input name="email" type="email" required autocomplete="email" /></label>
-        <label>Organisation <input name="org" autocomplete="organization" /></label>
-        <label>Phone <input name="phone" type="tel" autocomplete="tel" /></label>
-        <label>Anything we should know? <textarea name="message" rows="3"></textarea></label>
+        <label>Your name <input name="name" required maxlength="100" autocomplete="name" /></label>
+        <label>Work email <input name="email" type="email" required maxlength="200" autocomplete="email" /></label>
+        <label>Organisation <input name="org" maxlength="200" autocomplete="organization" /></label>
+        <label>Phone <input name="phone" type="tel" maxlength="40" autocomplete="tel" /></label>
+        <label>Anything we should know? <textarea name="message" rows="3" maxlength="4000"></textarea></label>
+        <!-- Bot trap: hidden from people, so anything typed here is from a bot -->
+        <label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off" /></label>
         <button class="btn btn-primary" type="submit">Request a demo</button>
       </form>
     </div>
