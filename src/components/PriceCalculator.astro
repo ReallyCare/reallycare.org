@@ -1,0 +1,46 @@
+---
+// Maximum monthly cost at 15p per care hour, with the £75/month minimum.
+// Longer visits (e.g. sleepovers) are discounted, so real bills can be lower.
+const RATE = 0.15;
+const MINIMUM = 75;
+---
+<div class="calc card" data-rate={RATE} data-min={MINIMUM}>
+  <label for="hours">Care hours per week</label>
+  <input id="hours" type="range" min="25" max="10000" step="25" value="2000" />
+  <output for="hours" class="hours-out">2,000 hours</output>
+  <div class="calc-result">
+    <span>Maximum cost</span>
+    <strong class="cost">£1,300</strong><small> per month at most</small>
+    <div class="sub">about <b>£300</b> per week</div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.calc').forEach((calc) => {
+    const rate = Number(calc.dataset.rate);
+    const min = Number(calc.dataset.min);
+    const range = calc.querySelector('input')!;
+    const fmt = (n: number) => '£' + Math.round(n).toLocaleString('en-GB');
+    const update = () => {
+      const h = Number(range.value);
+      const monthly = (h * rate * 52) / 12;
+      calc.querySelector('.hours-out')!.textContent = h.toLocaleString('en-GB') + ' hours';
+      calc.querySelector('.cost')!.textContent = fmt(Math.max(monthly, min));
+      calc.querySelector('.sub')!.innerHTML =
+        monthly < min ? `Minimum charge of ${fmt(min)} a month applies` : `about <b>${fmt(h * rate)}</b> per week`;
+    };
+    range.addEventListener('input', update);
+    update();
+  });
+</script>
+
+<style>
+  .calc { display: grid; gap: 12px; box-shadow: var(--shadow); }
+  label { font-weight: 700; }
+  input { width: 100%; accent-color: var(--magenta); }
+  output { color: var(--ink-soft); }
+  .calc-result { border-top: 1px solid var(--line); padding-top: 16px; }
+  .calc-result span { display: block; color: var(--ink-soft); font-size: .9rem; }
+  .calc-result strong { font-family: var(--font-display); font-size: 3rem; color: var(--magenta); letter-spacing: var(--display-tracking); }
+  .sub { color: var(--ink-soft); }
+</style>

@@ -1,0 +1,117 @@
+---
+import Base from '../../layouts/Base.astro';
+import PriceCalculator from '../../components/PriceCalculator.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { officeFeatures } from '../../data/features';
+
+const terms = [
+  { big: '15p', title: 'Maximum per care hour', text: 'You pay for the care you deliver, not for how many people use Plait.' },
+  { big: 'Less', title: 'For longer visits', text: 'Longer visits such as sleepovers are charged at a lower rate.' },
+  { big: '£75', title: 'Minimum per month', text: 'Small services pay a flat £75 a month until their care hours pass that amount.' },
+  { big: '£0', title: 'Setup fee', text: 'There is no setup fee. If you would like help getting started, paid setup assistance is available.' },
+];
+
+const faqs = [
+  { q: 'Do you charge per user?', a: 'No. Office staff, care workers, clients and families can all use Plait at no extra cost.' },
+  { q: 'Are any features charged as extras?', a: 'No. Every feature of Plait is included in the price per care hour.' },
+  { q: 'Is there a minimum charge?', a: 'Yes. The minimum charge is £75 a month.' },
+  { q: 'Are sleepovers charged at 15p an hour?', a: 'No. Longer visits such as sleepovers are discounted, so 15p is the most you will pay for any care hour.' },
+  { q: 'Is there a setup fee?', a: 'No. We do offer paid setup assistance if you would like help moving your data across and getting your team trained.' },
+];
+---
+<Base
+  title="Pricing: never more than 15p per care hour | Plait from ReallyCare"
+  description="Plait costs no more than 15p per care hour, with every feature and every user included. Minimum £75 a month, no setup fee."
+>
+  <section class="hero">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Pricing</span>
+        <h1>Never more than <span class="hl">15p</span> per care hour</h1>
+        <p class="lede">One simple price that includes every feature and every user. You pay for the care you deliver, so your costs grow only as your service grows.</p>
+      </div>
+      <PriceCalculator />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="intro center">
+        <span class="eyebrow">How it works</span>
+        <h2>Simple terms</h2>
+      </div>
+      <div class="terms">
+        {terms.map((t) => (
+          <article class="card">
+            <strong class="big">{t.big}</strong>
+            <h3>{t.title}</h3>
+            <p>{t.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap split top">
+      <div>
+        <span class="eyebrow">Everything included</span>
+        <h2>One price covers all of Plait</h2>
+        <p class="lede">There are no modules to buy separately and no premium tier.</p>
+        <p><a href="/plait/">See every feature in detail →</a></p>
+      </div>
+      <ul class="included">
+        {officeFeatures.map((f) => <li><a href={`/plait/#${f.id}`}>{f.title}</a></li>)}
+        <li><a href="/plait/#point-of-care">Point-of-care app for care workers, families and paramedics</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap faq-wrap">
+      <h2>Questions about pricing</h2>
+      <div class="faq">
+        {faqs.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand heading="Find out what Plait would cost you" text="Book a demo and we'll work out a quote based on the care your service delivers." />
+</Base>
+
+<style>
+  .hero { background: var(--hero-bg); padding-block: clamp(48px, 7vw, 88px); }
+  .hl { color: var(--magenta); }
+
+  .terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 20px; }
+  .big { display: block; font-family: var(--font-display); font-weight: var(--display-weight); font-size: 2.6rem; line-height: 1; color: var(--magenta); letter-spacing: var(--display-tracking); margin-bottom: 16px; }
+  .terms p { color: var(--ink-soft); margin: 0; }
+
+  .split.top { align-items: start; }
+  .included { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 560px) { .included { grid-template-columns: 1fr; } }
+  .included li:last-child { grid-column: 1 / -1; }
+  .included a {
+    display: flex; gap: 10px; align-items: center; height: 100%;
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm);
+    padding: 12px 14px; color: var(--ink); text-decoration: none; font-weight: 600;
+  }
+  .included a::before { content: '✓'; color: var(--magenta); font-weight: 800; }
+  .included a:hover { border-color: var(--magenta); }
+
+  .faq-wrap { max-width: 820px; }
+  .faq details { border-bottom: 1px solid var(--line); }
+  .faq summary {
+    cursor: pointer; list-style: none; padding: 20px 0; font-weight: 700; font-size: 1.1rem;
+    display: flex; justify-content: space-between; gap: 16px;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: '+'; color: var(--magenta); font-size: 1.5rem; line-height: 1; transition: transform .2s; }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .faq p { color: var(--ink-soft); margin: 0 0 20px; }
+</style>

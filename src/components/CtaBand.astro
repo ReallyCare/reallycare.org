@@ -4,6 +4,10 @@ const {
   heading = 'See Plait with your own scenarios',
   text = 'Book a demo with someone who has run a homecare service. Never more than 15p per care hour.',
 } = Astro.props;
+// Don't offer a link to the page the visitor is already on
+const secondary = Astro.url.pathname.startsWith('/pricing')
+  ? { href: '/plait/', label: 'See all features' }
+  : { href: '/pricing/', label: 'See pricing' };
 ---
 <section class="cta-band">
   <div class="wrap inner">
@@ -13,7 +17,7 @@ const {
     </div>
     <div class="cta-row">
       <a href="/#demo" class="btn btn-primary">Book a demo →</a>
-      <a href="/pricing/" class="btn btn-ghost">See pricing</a>
+      <a href={secondary.href} class="btn btn-ghost">{secondary.label}</a>
     </div>
   </div>
 </section>

@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import HeroVisual from '../components/HeroVisual.astro';
+import PriceCalculator from '../components/PriceCalculator.astro';
 import { officeFeatures } from '../data/features';
 
 const homeIds = ['scheduling', 'care-planning', 'emar', 'finance', 'training-hr', 'compliance'];
@@ -131,17 +132,9 @@ const badges = [
         <h2>Never more than <span class="hl">15p</span> per care hour</h2>
         <p class="lede">You pay for the care hours you deliver, and longer visits such as sleepovers cost less. There are no per-user fees, no per-module fees and no setup fee. The minimum charge is £75 a month.</p>
         <p>If you'd like help getting set up, we offer paid setup assistance.</p>
+        <p><a href="/pricing/">Full pricing details →</a></p>
       </div>
-      <div class="calc card">
-        <label for="hours">Care hours per week</label>
-        <input id="hours" type="range" min="25" max="10000" step="25" value="2000" />
-        <output id="hours-out" for="hours">2,000 hours</output>
-        <div class="calc-result">
-          <span>Maximum cost</span>
-          <strong id="cost-month">£1,300</strong><small> per month at most</small>
-          <div class="sub" id="cost-note">about <b id="cost-week">£300</b> per week</div>
-        </div>
-      </div>
+      <PriceCalculator />
     </div>
   </section>
 
@@ -165,22 +158,6 @@ const badges = [
     </div>
   </section>
 
-  <script>
-    const range = document.getElementById('hours') as HTMLInputElement;
-    const fmt = (n: number) => '£' + Math.round(n).toLocaleString('en-GB');
-    const update = () => {
-      const h = Number(range.value);
-      document.getElementById('hours-out')!.textContent = h.toLocaleString('en-GB') + ' hours';
-      const monthly = (h * 0.15 * 52) / 12;
-      const minimum = monthly < 75;
-      document.getElementById('cost-month')!.textContent = fmt(minimum ? 75 : monthly);
-      document.getElementById('cost-note')!.innerHTML = minimum
-        ? 'Minimum charge of £75 a month applies'
-        : `about <b>${fmt(h * 0.15)}</b> per week`;
-    };
-    range.addEventListener('input', update);
-    update();
-  </script>
 </Base>
 
 <style>
@@ -219,14 +196,6 @@ const badges = [
   .quote a { color: #ff8cc6; }
 
   .hl { color: var(--magenta); }
-  .calc { display: grid; gap: 12px; box-shadow: var(--shadow); }
-  .calc label { font-weight: 700; }
-  .calc input { width: 100%; accent-color: var(--magenta); }
-  .calc output { color: var(--ink-soft); }
-  .calc-result { border-top: 1px solid var(--line); padding-top: 16px; }
-  .calc-result span { display: block; color: var(--ink-soft); font-size: .9rem; }
-  .calc-result strong { font-family: var(--font-display); font-size: 3rem; color: var(--magenta); letter-spacing: var(--display-tracking); }
-  .calc-result .sub { color: var(--ink-soft); }
 
   .form { display: grid; gap: 14px; box-shadow: var(--shadow); }
   .form label { display: grid; gap: 6px; font-weight: 600; font-size: .95rem; }
