@@ -1,0 +1,83 @@
+---
+import Base from '../../layouts/Base.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const stories = [
+  {
+    org: 'Pineshield Care',
+    place: 'Cardiff',
+    quote: 'Thanks for all your help & advice. A1 customer service from ReallyCare once again.',
+    who: 'James Dwyer, Chair',
+    year: '2026',
+  },
+  {
+    org: 'Calon Lan Community Care',
+    place: 'North Wales, and Blue Ribbon Community Care in England',
+    summary: 'Calon Lan rolled out Plait’s mobile eMAR across their North Wales branches during the pandemic, only a few weeks after an online training session, and then extended it to their franchise network in England.',
+    quote: 'We serve hundreds of clients across a wide area and needed a way of monitoring medication without having to physically collect MAR paperwork. Real time alerts would enable us to deal with issues as they occur and, importantly, evidence our actions.',
+    who: 'Noel Williams',
+    year: '2020',
+    link: '/2020/04/19/eMAR-rollout-during-pandemic/',
+  },
+  {
+    org: 'Bloomsbury Home Care',
+    summary: 'Bloomsbury began by rolling out Plait’s medication management and the care worker app across all their services, as the first step towards the full system.',
+    quote: 'One key advantage for us is that care managers will be able to get instant alerts relating to medication issues and deal with them as they arise, and no longer rely on paper MAR sheets.',
+    who: 'Nick Christodoulou, CEO',
+    year: '2017',
+    link: '/2017/11/19/Bloomsbury/',
+  },
+];
+---
+<Base
+  title="Customers | Plait from ReallyCare"
+  description="Homecare providers across England and Wales run their services on Plait. Read what Pineshield Care, Calon Lan Community Care and Bloomsbury Home Care say."
+>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Customers</span>
+      <h1>Homecare providers who run on Plait</h1>
+      <p class="lede">From local services to multi-branch and franchise networks, homecare providers in England and Wales run their services on Plait.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap stories">
+      {stories.map((s, i) => (
+        <article class:list={['card', 'story', { lead: i === 0 }]}>
+          <header>
+            <h2>{s.org}</h2>
+            {s.place && <p class="place">{s.place}</p>}
+          </header>
+          {s.summary && <p class="summary">{s.summary}</p>}
+          <figure>
+            <blockquote>“{s.quote}”</blockquote>
+            <figcaption>{s.who} · {s.year}</figcaption>
+          </figure>
+          {s.link && <a href={s.link} class="more">Read the full story →</a>}
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand heading="Could Plait work for your service?" text="Book a demo and we'll walk through how your service runs today. Never more than 15p per care hour." />
+</Base>
+
+<style>
+  .hero { background: var(--hero-bg); padding-block: clamp(56px, 8vw, 96px) clamp(32px, 4vw, 48px); }
+  .stories { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 860px) { .stories { grid-template-columns: 1fr; } }
+  .story { display: flex; flex-direction: column; gap: 16px; padding: clamp(24px, 3vw, 36px); }
+  .story.lead { grid-column: 1 / -1; background: var(--dark-band); border-color: transparent; color: rgb(255 255 255 / .8); }
+  .story h2 { font-size: 1.6rem; margin: 0; }
+  .story.lead h2 { color: #fff; }
+  .place { margin: 4px 0 0; color: var(--magenta); font-weight: 700; font-size: .9rem; }
+  .lead .place { color: #ff8cc6; }
+  .summary { color: var(--ink-soft); margin: 0; }
+  figure { margin: 0; flex: 1; }
+  blockquote { margin: 0 0 12px; font-family: var(--font-display); font-size: 1.25rem; line-height: 1.4; }
+  .lead blockquote { font-size: clamp(1.5rem, 3vw, 2.2rem); color: #fff; line-height: 1.25; }
+  figcaption { font-size: .9rem; color: var(--ink-soft); }
+  .lead figcaption { color: rgb(255 255 255 / .7); }
+  .more { font-weight: 700; text-decoration: none; }
+</style>

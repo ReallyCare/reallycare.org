@@ -15,9 +15,7 @@ Only a few weeks after their (online!) training session, ReallyCare CIC’s mobi
 
 Noel explained, “We serve hundreds of clients across a wide area and needed a way of monitoring medication without having to physically collect MAR paperwork. Real time alerts would enable us to deal with issues as they occur and, importantly, evidence our actions. The eMAR solution provides the latest medication regimes immediately to care workers - which can be advantageous when dealing with something like an emergency hospital discharge.
 
-We considered a number of software providers over a six month period and already knew what Mark Chapman was capable of.  We were looking for a low cost, flexible solution which was compatible with any mobile phone device. ReallyCare stood out as a fully featured, low cost solution, and they’ve been really keen to work with us to develop it further. They have provided us with a highly configurable piece of software, and several features we’ve suggested have already been made available. 
-
-The ReallyCare solution is open source and we’re not tied into lengthy contracts. However, we want stability for the future and so we’re already looking at other products in the ReallyCare portfolio to provide our teams with a one stop shop for medication, scheduling, record keeping and care planning”.
+We considered a number of software providers over a six month period and already knew what Mark Chapman was capable of.  We were looking for a low cost, flexible solution which was compatible with any mobile phone device. ReallyCare stood out as a fully featured, low cost solution, and they’ve been really keen to work with us to develop it further. They have provided us with a highly configurable piece of software, and several features we’ve suggested have already been made available.”
 
 Mark Chapman of ReallyCare added, “We’re delighted the implementation has gone so well. It really is quite an achievement, particularly under the current circumstances, and we look forward to working with Noel and colleagues beyond this project”.
 
