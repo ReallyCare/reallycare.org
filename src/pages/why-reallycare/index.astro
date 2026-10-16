@@ -1,0 +1,164 @@
+---
+import Base from '../../layouts/Base.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const certs = [
+  {
+    img: '/img/ISO9001_27001.png', alt: 'ISO 9001 and ISO 27001',
+    title: 'ISO 9001 and ISO 27001',
+    text: 'Independently certified for quality management and information security.',
+    link: { href: '/img/IMSISO9001_2015_ISO27001_2022Certificate.pdf', label: 'View certificate' },
+  },
+  {
+    img: '/img/ceplus.webp', alt: 'Cyber Essentials Plus',
+    title: 'Cyber Essentials Plus',
+    text: 'The highest level of the UK government-backed cyber security scheme, independently tested.',
+    link: { href: 'https://registry.blockmarktech.com/certificates/7ba00f92-ee57-47bb-a311-b7862ab72fe8/', label: 'Check the registry' },
+  },
+  {
+    img: '/img/dspt_img.png', alt: 'NHS Data Security and Protection Toolkit',
+    title: 'NHS DSPT: standards exceeded',
+    text: 'Our Data Security and Protection Toolkit assessment exceeds the required standards.',
+    link: { href: 'https://www.dsptoolkit.nhs.uk/OrganisationSearch/X5F0Z', label: 'See our DSPT entry' },
+  },
+  {
+    img: '/img/PRSB-Partner-Logo.png', alt: 'PRSB partner',
+    title: 'PRSB partner',
+    text: 'Plait supports the Professional Record Standards Body’s About Me and Personalised Care and Support Plan standards.',
+    link: { href: 'https://theprsb.org', label: 'About the PRSB' },
+  },
+];
+---
+<Base
+  title="Why ReallyCare: care software from people who know care"
+  description="Built by people who have been homecare providers, run as a not-for-profit CIC, and certified to ISO 27001, Cyber Essentials Plus and NHS DSPT standards."
+>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Why ReallyCare</span>
+      <h1>Software made by people who have been homecare providers</h1>
+      <p class="lede">We are a small, specialist team. You won't be one of thousands of customers to a company answering to investors.</p>
+    </div>
+  </section>
+
+  <!-- 1. Experience -->
+  <section class="section">
+    <div class="wrap reason">
+      <span class="n" aria-hidden="true">01</span>
+      <div>
+        <h2>We know homecare from the inside</h2>
+        <p class="lede">Our founder, Mark Chapman, has built software for social care since 1987. He also co-managed a domiciliary care provider for several years, so Plait is designed around how a homecare office really works.</p>
+        <div class="founder card">
+          <img src="/img/mark_1_orig.jpg" alt="Mark Chapman" width="104" height="124" />
+          <div>
+            <strong>Mark Chapman, founder and CEO</strong>
+            <p>Mark has founded and led two successful care technology businesses, one of which featured in the Deloitte UK Technology Fast 50 in consecutive years. He was made a Fellow of the RSA in 2008.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Not for profit -->
+  <section class="section alt">
+    <div class="wrap reason">
+      <span class="n" aria-hidden="true">02</span>
+      <div>
+        <h2>Not for profit, and no investors</h2>
+        <p class="lede">ReallyCare is a community interest company and a certified social enterprise. We have no investors who need a return, so we never have to put their interests before yours.</p>
+        <ul class="ticks">
+          <li>Our profits are reinvested in Plait or donated to organisations in the care sector</li>
+          <li>So far we have donated to a <a href="https://tn22clubs.org/">local dementia charity</a></li>
+          <li>Our care planning features were developed with a Catalyst grant from the <a href="https://www.thersa.org/">RSA</a></li>
+        </ul>
+        <img src="/img/SEUK.png" alt="Certified Social Enterprise" class="seuk" width="120" height="120" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Security -->
+  <section class="section">
+    <div class="wrap reason">
+      <span class="n" aria-hidden="true">03</span>
+      <div>
+        <h2>Your data is safe with us</h2>
+        <p class="lede">Care records are among the most sensitive data there is. Our security is independently certified, and you can check every certificate yourself.</p>
+        <div class="certs">
+          {certs.map((c) => (
+            <article class="card cert">
+              <div class="badge"><img src={c.img} alt={c.alt} loading="lazy" /></div>
+              <h3>{c.title}</h3>
+              <p>{c.text}</p>
+              <a href={c.link.href}>{c.link.label} →</a>
+            </article>
+          ))}
+        </div>
+        <p class="note">Our servers are monitored 24 hours a day by UptimeRobot.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Open -->
+  <section class="section alt">
+    <div class="wrap reason">
+      <span class="n" aria-hidden="true">04</span>
+      <div>
+        <h2>Open by principle</h2>
+        <p class="lede">We believe care software works best when it is built on open standards. Plait is built on open source technologies, and we plan to open-source Plait itself in time.</p>
+        <p>Once Plait is open source, you won’t have to depend on us unless you want to.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Service -->
+  <section class="section dark">
+    <div class="wrap reason">
+      <span class="n" aria-hidden="true">05</span>
+      <div>
+        <h2>You talk to people who know care</h2>
+        <p class="lede">When you contact us, you speak to the people who build Plait, and they understand homecare.</p>
+        <figure class="quote">
+          <blockquote>“Thanks for all your help &amp; advice. A1 customer service from ReallyCare once again.”</blockquote>
+          <figcaption>James Dwyer, Chair, Pineshield Care, Cardiff</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>
+
+<style>
+  .hero { background: var(--hero-bg); padding-block: clamp(56px, 8vw, 104px) clamp(40px, 5vw, 64px); }
+  .hero h1 { max-width: 18ch; }
+
+  .reason { display: grid; grid-template-columns: 120px 1fr; gap: clamp(16px, 4vw, 48px); max-width: 980px; }
+  @media (max-width: 700px) { .reason { grid-template-columns: 1fr; } }
+  .n { font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5rem); line-height: .9; color: var(--magenta); opacity: .35; font-weight: var(--display-weight); }
+  .reason .lede { max-width: 60ch; }
+
+  .founder { display: flex; gap: 20px; align-items: flex-start; margin-top: 24px; padding: 20px; }
+  .founder img { width: 72px; height: 86px; object-fit: cover; border-radius: var(--radius-sm); flex: none; }
+  .founder p { margin: 6px 0 0; color: var(--ink-soft); }
+
+  .ticks { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 10px; }
+  .ticks li { padding-left: 28px; position: relative; color: var(--ink-soft); }
+  .ticks li::before { content: '✓'; position: absolute; left: 0; color: var(--magenta); font-weight: 800; }
+  .seuk { width: 96px; background: var(--badge-bg); border-radius: 50%; padding: 4px; }
+
+  .certs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 24px; }
+  @media (max-width: 700px) { .certs { grid-template-columns: 1fr; } }
+  .cert { display: flex; flex-direction: column; padding: 24px; }
+  .cert .badge { background: var(--badge-bg); border-radius: var(--radius-sm); height: 72px; display: grid; place-items: center; margin-bottom: 16px; padding: 8px; width: fit-content; min-width: 120px; }
+  .cert .badge img { max-height: 56px; width: auto; }
+  .cert p { color: var(--ink-soft); flex: 1; }
+  .cert a { font-weight: 700; text-decoration: none; }
+  .note { margin-top: 20px; color: var(--ink-soft); font-size: .95rem; }
+
+  .dark { background: var(--dark-band); color: rgb(255 255 255 / .82); }
+  .dark h2 { color: #fff; }
+  .dark .lede { color: rgb(255 255 255 / .75); }
+  .dark .n { color: #ff8cc6; }
+  .quote { margin: 32px 0 0; }
+  .quote blockquote { margin: 0 0 12px; font-family: var(--font-display); font-size: clamp(1.4rem, 2.6vw, 2rem); color: #fff; line-height: 1.3; }
+</style>
