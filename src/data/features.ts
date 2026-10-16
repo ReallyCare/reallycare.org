@@ -31,8 +31,7 @@ export const officeFeatures: Feature[] = [
     summary: 'Referral, assessment and published care plan in one flow. Care workers see the changes at the next visit.',
     points: [
       'Handle referrals, complete assessments and publish care plans in one process',
-      'Fully configurable, with templates from the Professional Record Standards Body (PRSB)',
-      'Supports the PRSB About Me and Personalised Care and Support Plan standards',
+      'Fully configurable, with templates based on the PRSB About Me and Personalised Care and Support Plan standards',
       'Changes are highlighted to care workers at the point of care',
     ],
   },
@@ -40,13 +39,12 @@ export const officeFeatures: Feature[] = [
     id: 'emar',
     icon: '💊',
     title: 'Medication management (eMAR)',
-    summary: 'Record medication in the office and at the point of care, with a warning before a dose is given too soon.',
+    summary: 'Record medication at the point of care, with real-time alerts in the office if a dose is missed.',
     points: [
       'Manage client medication in the office and at the point of care',
-      'Care workers see when each medication was last taken',
-      'A warning appears if a dose would be given too soon after the last one',
+      'Get alerts in the office if a medication is not administered, or if a monitored PRN medication is needed',
+      'Real-time alerts, backed up by straightforward auditing',
     ],
-    image: { src: '/img/potential-overdose.png', alt: 'Plait warning a care worker about a potential overdose before recording a dose' },
   },
   {
     id: 'finance',
@@ -84,7 +82,7 @@ export const officeFeatures: Feature[] = [
     summary: 'Accidents, complaints, and anything else you currently track in a spreadsheet.',
     points: [
       'Record accidents and handle complaints',
-      'A flexible, fully integrated way to handle anything else you keep in a spreadsheet',
+      'A flexible, fully integrated way to handle anything else you currently keep in a spreadsheet',
     ],
   },
   {
@@ -98,8 +96,11 @@ export const officeFeatures: Feature[] = [
     id: 'messaging',
     icon: '💬',
     title: 'Secure messaging',
-    summary: 'Messaging built into the point-of-care app, so you don’t need WhatsApp.',
-    points: ['Worried about where WhatsApp stores your messages? Plait’s messaging is built into the point-of-care app'],
+    summary: 'Messaging built into the point-of-care app, so client details stay with you, not on WhatsApp.',
+    points: [
+      'Worried about where WhatsApp stores your messages? Plait’s messaging is built into the point-of-care app',
+      'When a care worker leaves, your messages about clients don’t leave with them',
+    ],
   },
   {
     id: 'surveys',

@@ -3,6 +3,10 @@ import Base from '../../layouts/Base.astro';
 import VideoEmbed from '../../components/VideoEmbed.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import { officeFeatures, pointOfCare } from '../../data/features';
+
+// With an odd number of half-width cards, let the last one span the full row
+const singles = officeFeatures.filter((f) => !f.image);
+const lastSingle = singles.length % 2 ? singles.at(-1)!.id : null;
 ---
 <Base
   title="Plait features: rostering, care planning, eMAR, payroll | ReallyCare"
@@ -41,7 +45,7 @@ import { officeFeatures, pointOfCare } from '../../data/features';
       </div>
       <div class="feature-grid">
         {officeFeatures.map((f) => (
-          <article id={f.id} class:list={['card', 'feature', { wide: f.image }]}>
+          <article id={f.id} class:list={['card', 'feature', { wide: f.image, span: f.id === lastSingle }]}>
             <div>
               <span class="icon" aria-hidden="true">{f.icon}</span>
               <h3>{f.title}</h3>
@@ -64,7 +68,10 @@ import { officeFeatures, pointOfCare } from '../../data/features';
           {pointOfCare.map((p) => <li><h3>{p.title}</h3><p>{p.text}</p></li>)}
         </ul>
       </div>
-      <img src="/img/med-last-taken.png" alt="Plait point-of-care medication screen showing when each dose was last taken" class="shot" loading="lazy" />
+      <div class="poc-shots">
+        <img src="/img/med-last-taken.png" alt="Plait point-of-care medication screen showing when each dose was last taken" class="shot" loading="lazy" />
+        <img src="/img/potential-overdose.png" alt="The point-of-care app warning a care worker about a potential overdose" class="shot overlay" loading="lazy" />
+      </div>
     </div>
   </section>
 
@@ -103,6 +110,7 @@ import { officeFeatures, pointOfCare } from '../../data/features';
   .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-flow: dense; gap: 20px; }
   @media (max-width: 760px) { .feature-grid { grid-template-columns: 1fr; } }
   .feature { scroll-margin-top: 150px; }
+  .feature.span { grid-column: 1 / -1; }
   .feature.wide { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
   @media (max-width: 760px) { .feature.wide { grid-template-columns: 1fr; } }
   .feature ul { margin: 0; padding-left: 1.2em; color: var(--ink-soft); }
@@ -115,6 +123,9 @@ import { officeFeatures, pointOfCare } from '../../data/features';
   .poc h3 { margin-bottom: 4px; }
   .poc p { margin: 0; color: var(--ink-soft); }
   #point-of-care .shot { margin-top: 0; }
+  .poc-shots { position: relative; padding-bottom: 120px; }
+  .poc-shots .overlay { position: absolute; right: -12px; bottom: 0; width: 58%; }
+  @media (max-width: 860px) { .poc-shots .overlay { right: 0; } }
 
   .standards { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(24px, 5vw, 64px); }
   @media (max-width: 860px) { .standards { grid-template-columns: 1fr; } }
