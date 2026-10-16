@@ -24,7 +24,7 @@ To ask about the records held about you in Plait, contact your care provider fir
 
 **When you request a demo** we collect your name, work email, organisation, phone number and anything you tell us in your message. We use it only to arrange and follow up your demo. Our lawful basis is legitimate interests: responding to an enquiry you made. [CHECK: how long demo enquiries are kept, e.g. "We delete enquiries that don't lead to a contract after 2 years."]
 
-**When you join our mailing list** we collect your email address. We use it to send occasional news about Plait and ReallyCare. Our lawful basis is your consent, which you can withdraw at any time using the unsubscribe link in every email. Our mailing list is run by Mailchimp (Intuit Inc.), which stores data in the United States under the UK Extension to the EU–US Data Privacy Framework.
+**When you join our mailing list** we collect your email address. We use it to send occasional news about Plait and ReallyCare. Our lawful basis is your consent, which you can withdraw at any time using the unsubscribe link in every email. Our mailing list is run by Mailchimp (Intuit Inc.), which stores data in the United States under the UK Extension to the EU–US Data Privacy Framework [CHECK: confirm Mailchimp’s current transfer mechanism].
 
 **When you email us** we use what you send to reply to you.
 
