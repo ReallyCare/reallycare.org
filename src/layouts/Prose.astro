@@ -1,0 +1,21 @@
+---
+// Layout for plain Markdown pages (privacy, careers, etc.)
+import Base from './Base.astro';
+const { frontmatter } = Astro.props;
+---
+<Base title={`${frontmatter.title} | ReallyCare`} description={frontmatter.description ?? frontmatter.title}>
+  <section class="section">
+    <div class="wrap narrow">
+      {frontmatter.eyebrow && <span class="eyebrow">{frontmatter.eyebrow}</span>}
+      <h1>{frontmatter.title}</h1>
+      {frontmatter.updated && <p class="updated">Last updated {frontmatter.updated}</p>}
+      <div class="prose"><slot /></div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .narrow { max-width: 760px; }
+  h1 { font-size: clamp(2rem, 4.4vw, 3.2rem); }
+  .updated { color: var(--ink-soft); font-size: .95rem; }
+</style>

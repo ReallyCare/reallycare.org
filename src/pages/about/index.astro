@@ -1,0 +1,71 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base
+  title="About ReallyCare CIC"
+  description="ReallyCare CIC is a not-for-profit community interest company making care management software for homecare providers. Contact us or join our mailing list."
+>
+  <section class="hero">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">About us</span>
+        <h1>The power of community</h1>
+        <p class="lede">ReallyCare CIC is a not-for-profit community interest company. We make Plait, care management software for homecare providers.</p>
+      </div>
+      <img src="/img/mark-jane-townson.webp" alt="Mark Chapman with Dr Jane Townson on the ReallyCare stand at the London Care Show" class="shot" width="1400" height="927" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap narrow prose">
+      <h2>Why we exist</h2>
+      <p>People are living longer and healthier lives than ever, but at some point many of us will need care. We believe software can help in two ways: by making care provision more efficient, and by ensuring its quality.</p>
+      <p>We also believe in the power of community, and there is no better example of what collaboration can achieve than open source software. Plait is built on open source technologies, and we plan to open-source Plait itself in time.</p>
+      <p>As a community interest company, anything we make is reinvested in our products and services or donated to organisations in the care sector. So far, our profits have gone to a <a href="https://tn22clubs.org/">local dementia charity</a>.</p>
+
+      <h2>Our founder</h2>
+      <p>Mark Chapman has worked in social care technology since 1987, founding and leading two successful businesses, one of which featured in the Deloitte UK Technology Fast 50 in consecutive years. He also co-managed a domiciliary care provider for several years.</p>
+      <p>Mark’s dedication to social care is widely recognised, and in 2008 he was made a Fellow of the RSA. He founded ReallyCare to bring care providers the kind of open, specialist software that health has benefited from for years.</p>
+
+      <h2>Thanks</h2>
+      <p>Our care planning features were developed with the help of a Catalyst grant from the <a href="https://www.thersa.org/">RSA</a>. Our servers are monitored 24/7 by <a href="https://uptimerobot.com">UptimeRobot</a>.</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="contact">
+    <div class="wrap split top">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h2>Get in touch</h2>
+        <p class="lede">Email us at <a href="mailto:contact-now@reallycare.org">contact-now@reallycare.org</a>, or <a href="/#demo">book a demo</a>.</p>
+        <p>Interested in working with us? See <a href="/careers/">careers</a>.</p>
+      </div>
+      <form class="card form" action="https://reallycare.us20.list-manage.com/subscribe/post?u=22347211969ce5e66cb0b6c9c&amp;id=461b7ceff3" method="post" target="_blank">
+        <h3>Join our mailing list</h3>
+        <p class="hint">Occasional news about Plait and ReallyCare. You can unsubscribe at any time.</p>
+        <label>Email address <input type="email" name="EMAIL" required autocomplete="email" /></label>
+        <label class="check"><input type="checkbox" name="gdpr[143]" value="Y" required /> I agree to receive emails from ReallyCare CIC</label>
+        <!-- Mailchimp's bot trap: real people never fill this in -->
+        <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_22347211969ce5e66cb0b6c9c_461b7ceff3" tabindex="-1" value="" /></div>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+        <p class="hint">We use Mailchimp to send our emails. See <a href="https://mailchimp.com/legal/terms">Mailchimp’s privacy practices</a> and <a href="/privacy/">our privacy policy</a>.</p>
+      </form>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { background: var(--hero-bg); padding-block: clamp(48px, 7vw, 88px); }
+  .hero .shot { margin-top: 0; }
+  .narrow { max-width: 760px; }
+  .prose h2:first-child { margin-top: 0; }
+  .split.top { align-items: start; }
+  .form { display: grid; gap: 14px; box-shadow: var(--shadow); position: relative; }
+  .form h3 { margin: 0; }
+  .form label { display: grid; gap: 6px; font-weight: 600; font-size: .95rem; }
+  .form label.check { display: flex; gap: 10px; align-items: center; font-weight: 500; }
+  .form input[type=email] { font: inherit; padding: 12px 14px; border-radius: var(--radius-sm); border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+  .form input[type=checkbox] { accent-color: var(--magenta); width: 18px; height: 18px; }
+  .form .btn { justify-content: center; }
+  .hint { font-size: .85rem; color: var(--ink-soft); margin: 0; }
+</style>
