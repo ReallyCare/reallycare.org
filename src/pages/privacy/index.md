@@ -8,7 +8,7 @@ This policy explains how ReallyCare CIC ("we", "us") collects and uses personal 
 
 ## Who we are
 
-ReallyCare CIC is a community interest company registered in England and Wales 07721795. Our address is Gate House, Stockland Lane, Hadlow Down, Uckfield, TN22 4EA. We are registered with the Information Commissioner's Office Z2802833.
+ReallyCare CIC is a community interest company registered in England and Wales (company number 07721795). Our address is Gate House, Stockland Lane, Hadlow Down, Uckfield, TN22 4EA. We are registered with the Information Commissioner's Office (registration number Z2802833).
 
 For any question about this policy or your data, email [contact-now@reallycare.org](mailto:contact-now@reallycare.org).
 
@@ -22,7 +22,7 @@ To ask about the records held about you in Plait, contact your care provider fir
 
 **When you request a demo** we collect your name, work email, organisation, phone number and anything you tell us in your message. We use it only to arrange and follow up your demo. Your request is sent by email, using Amazon Web Services (in the UK), to our support system. Our lawful basis is legitimate interests: responding to an enquiry you made. We delete enquiries that don't lead to a contract after 2 years.
 
-**When you join our mailing list** we collect your email address. We use it to send occasional news about Plait and ReallyCare. Our lawful basis is your consent, which you can withdraw at any time using the unsubscribe link in every email. Our mailing list is run by Mailchimp (Intuit Inc.), which stores data in the United States under the terms stated in the INternaional Transfers section of their [Data Processing Addendum](https://mailchimp.com/legal/data-processing-addendum).
+**When you join our mailing list** we collect your email address. We use it to send occasional news about Plait and ReallyCare. Our lawful basis is your consent, which you can withdraw at any time using the unsubscribe link in every email. Our mailing list is run by Mailchimp (Intuit Inc.), which stores data in the United States under the terms stated in the International Transfers section of their [Data Processing Addendum](https://mailchimp.com/legal/data-processing-addendum).
 
 **When you email us** we use what you send to reply to you.
 
