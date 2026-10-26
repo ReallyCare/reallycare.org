@@ -1,26 +1,19 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "reallycare-org-site",
+  "type": "module",
   "private": true,
-  "hexo": {
-    "version": "5.4.1"
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "start": "node server/server.mjs"
   },
   "dependencies": {
-    "hexo": "^5.4.1",
-    "hexo-browsersync": "^0.3.0",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "^1.0.0",
-    "hexo-generator-feed": "^3.0.0",
-    "hexo-generator-index": "^2.0.0",
-    "hexo-generator-sitemap": "^2.1.0",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^3.3.0",
-    "hexo-renderer-stylus": "^2.0.1",
-    "hexo-server": "^2.0.0",
-    "node-csp": "^1.0.1"
-  },
-  "scripts": {
-    "build": "if [ -f ./db.json ]; then rm ./db.json; fi && hexo generate && mv public/index.html public/blog/ && mv public/home/index.html public/"
+    "@astrojs/rss": "^4.0.19",
+    "@aws-sdk/client-sesv2": "^3.1152.0",
+    "@fontsource-variable/figtree": "^5.3.0",
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "astro": "^7.4.0",
+    "nodemailer": "^10.1.2"
   }
 }

@@ -1,0 +1,141 @@
+---
+import Base from '../../layouts/Base.astro';
+import VideoEmbed from '../../components/VideoEmbed.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { officeFeatures, pointOfCare } from '../../data/features';
+
+// With an odd number of half-width cards, let the last one span the full row
+const singles = officeFeatures.filter((f) => !f.image);
+const lastSingle = singles.length % 2 ? singles.at(-1)!.id : null;
+---
+<Base
+  title="Plait features: rostering, care planning, eMAR, payroll | ReallyCare"
+  description="Everything in Plait: scheduling, care planning, eMAR, payroll and invoicing, training, recruitment, compliance, messaging and a point-of-care app for care workers, families and paramedics."
+>
+  <section class="hero">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Plait</span>
+        <h1>One system for your whole homecare service</h1>
+        <p class="lede">From the first referral to the final invoice, everything happens in Plait. The office, care workers and families all use the same records.</p>
+        <div class="cta-row">
+          <a href="/#demo" class="btn btn-primary">Book a demo →</a>
+          <a href="#point-of-care" class="btn btn-ghost">The point-of-care app</a>
+        </div>
+      </div>
+      <figure class="video-wrap">
+        <VideoEmbed id="DN78wkst6uc" title="So, what is Plait?" poster="/img/plait-intro.jpg" />
+        <figcaption>A 10-minute introduction from our founder, Mark Chapman</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <nav class="jump" aria-label="Features on this page">
+    <div class="wrap">
+      {officeFeatures.map((f) => <a href={`#${f.id}`}>{f.title}</a>)}
+      <a href="#point-of-care">Point of care</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="intro">
+        <span class="eyebrow">For the office</span>
+        <h2>Run the whole service from one place</h2>
+      </div>
+      <div class="feature-grid">
+        {officeFeatures.map((f) => (
+          <article id={f.id} class:list={['card', 'feature', { wide: f.image, span: f.id === lastSingle }]}>
+            <div>
+              <span class="icon" aria-hidden="true">{f.icon}</span>
+              <h3>{f.title}</h3>
+              <ul>{f.points.map((p) => <li>{p}</li>)}</ul>
+            </div>
+            {f.image && <img src={f.image.src} alt={f.image.alt} loading="lazy" class="feature-img" />}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="point-of-care">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Point of care</span>
+        <h2>An app for everyone involved in care</h2>
+        <p class="lede">The point-of-care app runs on phones, tablets and desktops. It uses the same records as the office, so it is always up to date.</p>
+        <ul class="poc">
+          {pointOfCare.map((p) => <li><h3>{p.title}</h3><p>{p.text}</p></li>)}
+        </ul>
+      </div>
+      <div class="poc-shots">
+        <img src="/img/screenshots/event-details.webp" alt="A visit in the care worker app, showing the client, planned times, medication due and check-in buttons" class="shot phone" width="414" height="929" loading="lazy" />
+        <div class="meds">
+          <img src="/img/med-last-taken.png" alt="Plait point-of-care medication screen showing when each dose was last taken" class="shot" loading="lazy" />
+          <img src="/img/potential-overdose.png" alt="The point-of-care app warning a care worker about a potential overdose" class="shot overlay" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap standards">
+      <div>
+        <span class="eyebrow">Standards & security</span>
+        <h2>Built to recognised standards</h2>
+      </div>
+      <ul>
+        <li><strong>PRSB partner.</strong> Plait supports the About Me and Personalised Care and Support Plan standards.</li>
+        <li><strong>ISO 9001 and ISO 27001</strong> certified for quality and information security.</li>
+        <li><strong>Cyber Essentials Plus</strong> certified.</li>
+        <li><strong>NHS Data Security and Protection Toolkit</strong>: standards exceeded.</li>
+      </ul>
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>
+
+<style>
+  .hero { background: var(--hero-bg); padding-block: clamp(48px, 7vw, 88px); }
+  .video-wrap { margin: 0; }
+  .video-wrap figcaption { margin-top: 12px; font-size: .9rem; color: var(--ink-soft); text-align: center; }
+
+  .jump { position: sticky; top: 72px; z-index: 40; background: var(--bg); border-block: 1px solid var(--line); }
+  .jump .wrap { display: flex; gap: 8px; overflow-x: auto; padding-block: 12px; scrollbar-width: thin; }
+  .jump a {
+    flex: none; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line);
+    color: var(--ink); text-decoration: none; font-size: .9rem; font-weight: 600; background: var(--surface);
+  }
+  .jump a:hover { border-color: var(--magenta); color: var(--magenta); }
+
+  .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-flow: dense; gap: 20px; }
+  @media (max-width: 760px) { .feature-grid { grid-template-columns: 1fr; } }
+  .feature { scroll-margin-top: 150px; }
+  .feature.span { grid-column: 1 / -1; }
+  .feature.wide { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+  @media (max-width: 760px) { .feature.wide { grid-template-columns: 1fr; } }
+  .feature ul { margin: 0; padding-left: 1.2em; color: var(--ink-soft); }
+  .feature li + li { margin-top: 6px; }
+  .feature li::marker { color: var(--magenta); }
+  .feature-img { justify-self: center; max-height: 460px; width: auto; max-width: 100%; border-radius: var(--radius-sm); box-shadow: var(--shadow); border: 1px solid var(--line); }
+
+  .poc { list-style: none; padding: 0; margin: 32px 0 0; display: grid; gap: 20px; }
+  .poc li { padding-left: 20px; border-left: 3px solid var(--magenta); }
+  .poc h3 { margin-bottom: 4px; }
+  .poc p { margin: 0; color: var(--ink-soft); }
+  #point-of-care .shot { margin-top: 0; }
+  .poc-shots { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 20px; align-items: start; }
+  .poc-shots .phone { width: 100%; height: auto; border-radius: 20px; }
+  .meds { display: grid; gap: 20px; margin-top: 48px; }
+  .meds img { width: 100%; height: auto; }
+  .meds .overlay { width: 72%; justify-self: end; }
+  @media (max-width: 480px) { .poc-shots { grid-template-columns: 1fr; } .poc-shots .phone { max-width: 260px; justify-self: center; } .meds { margin-top: 0; } }
+
+  .standards { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(24px, 5vw, 64px); }
+  @media (max-width: 860px) { .standards { grid-template-columns: 1fr; } }
+  .standards ul { list-style: none; margin: 0; padding: 0; }
+  .standards li { padding: 16px 0; border-bottom: 1px solid var(--line); color: var(--ink-soft); }
+  .standards li:first-child { padding-top: 0; }
+  .standards strong { color: var(--ink); }
+</style>

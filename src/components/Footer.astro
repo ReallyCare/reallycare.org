@@ -1,0 +1,42 @@
+---
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap grid">
+    <div>
+      <img src="/img/transparent_logo.png" alt="reallycare CIC" width="150" height="51" class="logo" />
+      <p>ReallyCare CIC is a community interest company. Our profits go back into Plait and into the care sector.</p>
+    </div>
+    <div>
+      <h3>Plait</h3>
+      <a href="/plait/">Overview</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/customers/">Customers</a>
+      <a href="https://www.plaitapp.org">Log in</a>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <a href="/about/">About</a>
+      <a href="/blog/">Blog</a>
+      <a href="/careers/">Careers</a>
+      <a href="/privacy/">Privacy</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="mailto:contact-now@reallycare.org">contact-now@reallycare.org</a>
+      <a href="/#demo">Book a demo</a>
+    </div>
+  </div>
+  <div class="wrap legal">© {year} ReallyCare CIC</div>
+</footer>
+
+<style>
+  .site-footer { background: var(--dark-band); color: rgb(255 255 255 / .75); padding-block: 64px 32px; font-size: .95rem; }
+  .grid { display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 40px; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr 1fr; } .grid > :first-child { grid-column: 1 / -1; } }
+  .logo { filter: brightness(0) invert(1); opacity: .9; margin-bottom: 16px; }
+  h3 { color: #fff; font-family: var(--font-body); font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 12px; }
+  a { display: block; color: rgb(255 255 255 / .75); text-decoration: none; padding: 4px 0; overflow-wrap: anywhere; }
+  a:hover { color: #fff; }
+  .legal { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgb(255 255 255 / .12); font-size: .85rem; }
+</style>

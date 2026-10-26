@@ -1,0 +1,31 @@
+---
+interface Props { heading?: string; text?: string; }
+const {
+  heading = 'See Plait with your own scenarios',
+  text = 'Book a demo with someone who has run a homecare service. Never more than 15p per care hour.',
+} = Astro.props;
+// Don't offer a link to the page the visitor is already on
+const secondary = Astro.url.pathname.startsWith('/pricing')
+  ? { href: '/plait/', label: 'See all features' }
+  : { href: '/pricing/', label: 'See pricing' };
+---
+<section class="cta-band">
+  <div class="wrap inner">
+    <div>
+      <h2>{heading}</h2>
+      <p>{text}</p>
+    </div>
+    <div class="cta-row">
+      <a href="/#demo" class="btn btn-primary">Book a demo →</a>
+      <a href={secondary.href} class="btn btn-ghost">{secondary.label}</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-band { padding-block: clamp(56px, 8vw, 96px); background: var(--hero-bg); border-top: 1px solid var(--line); }
+  .inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px; }
+  h2 { margin-bottom: .3em; max-width: 20ch; }
+  p { color: var(--ink-soft); margin: 0; max-width: 48ch; }
+  .cta-row { margin: 0; }
+</style>

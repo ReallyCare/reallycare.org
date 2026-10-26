@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getPosts, postPath, postDate, summary } from '../../lib/blog';
+const posts = await getPosts();
+---
+<Base title="Blog | ReallyCare" description="News, announcements and reflections on technology in adult social care from ReallyCare CIC.">
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Blog</span>
+      <h1>News and thinking</h1>
+      <p class="lede">Announcements about Plait, and our views on technology, openness and adult social care.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap list">
+      {posts.map((p) => (
+        <a class="card post" href={postPath(p)}>
+          <p class="meta">{postDate(p)}{p.data.categories[0] && ` · ${p.data.categories[0]}`}</p>
+          <h2>{p.data.title}</h2>
+          <p>{summary(p)}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { background: var(--hero-bg); padding-block: clamp(56px, 8vw, 96px) clamp(32px, 4vw, 48px); }
+  .list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 20px; }
+  .post { color: inherit; text-decoration: none; display: flex; flex-direction: column; transition: transform .2s, box-shadow .2s; }
+  .post:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+  .post h2 { font-size: 1.4rem; margin-bottom: .4em; }
+  .post p { color: var(--ink-soft); margin: 0; }
+  .post .meta { font-size: .85rem; margin-bottom: 10px; color: var(--magenta); font-weight: 600; }
+</style>
