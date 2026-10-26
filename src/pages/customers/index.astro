@@ -6,15 +6,38 @@ const stories = [
   {
     org: 'Pineshield Care',
     place: 'Cardiff',
-    quote: 'Thanks for all your help & advice. A1 customer service from ReallyCare once again.',
-    who: 'James Dwyer, Chair',
+    rating: 'Care Inspectorate Wales: Good',
+    quote: ['Thanks for all your help & advice. A1 customer service from ReallyCare once again.'],
+    more: ['We originally went with ReallyCare CIC as we felt that they offered the best service in the market and it wasn’t going to be affected by higher corporate objectives. Given the team’s decades long experience in writing software for the domiciliary care sector, we knew they had the depth of knowledge of the challenges we faced and the problems that we needed to solve. The result has been that Plait meets our needs and is constantly being developed to add to an already rich feature set. It has proved to be helpful as we have expanded to take on another branch recently and are developing new services.'],
+    who: 'James Dwyer, Managing Director',
+    year: '2026',
+  },
+  {
+    org: 'Day to Day Care',
+    place: 'Bromley',
+    rating: 'CQC: Good',
+    quote: ['Plait was built for home care companies, and you can tell. It comes from many years of real experience in the sector, so it fits the way we actually work. When we have had an issue, Mark and the ReallyCare team have dealt with it very promptly. Their expertise and fast response give us confidence that problems get sorted quickly and our care keeps running smoothly.'],
+    who: 'David Armstrong, Managing Director',
+    year: '2026',
+  },
+  {
+    org: 'Guardian Live-In Care',
+    place: 'Aberdeen',
+    rating: 'Care Inspectorate: Good / Very Good',
+    quote: [
+      'Over the past years, we have really enjoyed working with ReallyCare and using the Plait system. We have seen how much Plait has developed during that time. As a care provider, it is important to us that the systems we use support not only the delivery of high-quality care but also the practicalities of running a care business day to day.',
+      'What stands out to us most is that the team genuinely listens to feedback. They take the time to understand what we need as a service and recognise the importance of ensuring systems support regulatory compliance, good record keeping and the smooth running of the business. It is great to see feedback being taken on board and improvements made in response to the real-life challenges faced by care providers.',
+      'Running a care service comes with many responsibilities, and having systems that continue to evolve alongside our needs makes a real difference. We appreciate the support, the willingness to listen and the commitment to continually improving what they offer.',
+      'It has been great to see the progress made, and we look forward to continuing to work with them as the system develops further. We would happily recommend Plait and ReallyCare to other care providers looking for a system that understands the realities of working in social care.',
+    ],
+    who: 'Lynne Watson, Service Director',
     year: '2026',
   },
   {
     org: 'Calon Lan Community Care',
     place: 'North Wales, and Blue Ribbon Community Care in England',
     summary: 'Calon Lan rolled out Plait’s mobile eMAR across their North Wales branches during the pandemic, only a few weeks after an online training session, and then extended it to their franchise network in England.',
-    quote: 'We serve hundreds of clients across a wide area and needed a way of monitoring medication without having to physically collect MAR paperwork. Real time alerts would enable us to deal with issues as they occur and, importantly, evidence our actions.',
+    quote: ['We serve hundreds of clients across a wide area and needed a way of monitoring medication without having to physically collect MAR paperwork. Real time alerts would enable us to deal with issues as they occur and, importantly, evidence our actions.'],
     who: 'Noel Williams, Proprietor',
     year: '2020',
     link: '/2020/04/19/eMAR-rollout-during-pandemic/',
@@ -22,22 +45,25 @@ const stories = [
   {
     org: 'Bloomsbury Home Care',
     summary: 'Bloomsbury began by rolling out Plait’s medication management and the care worker app across all their services, then moved to the full system.',
-    quote: 'One key advantage for us is that care managers will be able to get instant alerts relating to medication issues and deal with them as they arise, and no longer rely on paper MAR sheets.',
+    quote: ['One key advantage for us is that care managers will be able to get instant alerts relating to medication issues and deal with them as they arise, and no longer rely on paper MAR sheets.'],
     who: 'Nick Christodoulou, CEO',
     year: '2017',
     link: '/2017/11/19/Bloomsbury/',
   },
 ];
+
+// Long quotes read better at body size than in the display face
+const isLong = (paras: string[]) => paras.join(' ').length > 400;
 ---
 <Base
   title="Customers | Plait from ReallyCare"
-  description="Homecare providers across England and Wales run their services on Plait. Read what Pineshield Care, Calon Lan Community Care and Bloomsbury Home Care say."
+  description="Homecare providers across England, Scotland and Wales run their services on Plait. Read what Pineshield Care, Day to Day Care, Guardian Live-In Care and others say."
 >
   <section class="hero">
     <div class="wrap">
       <span class="eyebrow">Customers</span>
       <h1>Homecare providers who run on Plait</h1>
-      <p class="lede">From local services to multi-branch and franchise networks, homecare providers in England and Wales run their services on Plait.</p>
+      <p class="lede">From local services to multi-branch and franchise networks, homecare providers in England, Scotland and Wales run their services on Plait.</p>
     </div>
   </section>
 
@@ -51,9 +77,17 @@ const stories = [
           </header>
           {s.summary && <p class="summary">{s.summary}</p>}
           <figure>
-            <blockquote>“{s.quote}”</blockquote>
+            <blockquote class:list={{ long: isLong(s.quote) }}>
+              {s.quote.map((p, j) => <p>{j === 0 && '“'}{p}{j === s.quote.length - 1 && '”'}</p>)}
+            </blockquote>
+            {s.more && (
+              <blockquote class="long">
+                {s.more.map((p, j) => <p>{j === 0 && '“'}{p}{j === s.more.length - 1 && '”'}</p>)}
+              </blockquote>
+            )}
             <figcaption>{s.who} · {s.year}</figcaption>
           </figure>
+          {s.rating && <p class="rating">{s.rating}</p>}
           {s.link && <a href={s.link} class="more">Read the full story →</a>}
         </article>
       ))}
@@ -75,9 +109,15 @@ const stories = [
   .lead .place { color: #ff8cc6; }
   .summary { color: var(--ink-soft); margin: 0; }
   figure { margin: 0; flex: 1; }
+  blockquote p { margin: 0 0 .75em; }
+  blockquote p:last-child { margin-bottom: 0; }
   blockquote { margin: 0 0 12px; font-family: var(--font-display); font-size: 1.25rem; line-height: 1.4; }
   .lead blockquote { font-size: clamp(1.5rem, 3vw, 2.2rem); color: #fff; line-height: 1.25; }
+  blockquote.long { font-family: inherit; font-size: 1.05rem; line-height: 1.6; }
+  .lead blockquote.long { font-size: 1.1rem; color: rgb(255 255 255 / .85); margin-top: 20px; }
   figcaption { font-size: .9rem; color: var(--ink-soft); }
   .lead figcaption { color: rgb(255 255 255 / .7); }
+  .rating { margin: 0; font-size: .85rem; font-weight: 700; color: var(--ink-soft); }
+  .lead .rating { color: rgb(255 255 255 / .7); }
   .more { font-weight: 700; text-decoration: none; }
 </style>
