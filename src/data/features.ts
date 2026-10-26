@@ -45,6 +45,7 @@ export const officeFeatures: Feature[] = [
       'Get alerts in the office if a medication is not administered, or if a monitored PRN medication is needed',
       'Real-time alerts, backed up by straightforward auditing',
     ],
+    image: { src: '/img/screenshots/body-map.webp', alt: 'A body map in the care worker app showing where to apply a cream on the neck and shoulders' },
   },
   {
     id: 'finance',

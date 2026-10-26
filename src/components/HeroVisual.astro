@@ -1,50 +1,23 @@
 ---
-// Stylised product mock-up. Placeholder until real Plait screenshots are captured.
-const rows = [
-  { name: 'Sarah K.', visits: [[2, 3, 'Personal care'], [6, 2, 'Lunch'], [10, 2, 'Meds']] },
-  { name: 'David O.', visits: [[1, 2, 'Breakfast'], [4, 3, 'Shopping'], [9, 3, 'Tea']] },
-  { name: 'Priya S.', visits: [[3, 2, 'Meds'], [6, 4, 'Sitting service'], [11, 2, 'Bed']] },
-  { name: 'Tom W.', visits: [[1, 3, 'Personal care'], [5, 2, 'Lunch'], [8, 2, 'Meds']] },
-];
-const hours = ['07', '09', '11', '13', '15', '17'];
+// Real Plait screenshots (demo data): the office rota, with the care worker app on top.
 ---
-<div class="visual" aria-hidden="true">
+<div class="visual">
   <div class="window">
-    <div class="chrome"><i></i><i></i><i></i><span>Plait · Schedule</span></div>
-    <div class="app">
-      <aside>
-        <b>Plait</b>
-        <span class="on">Schedule</span><span>Clients</span><span>Staff</span><span>Care plans</span><span>eMAR</span><span>Payroll</span><span>Invoicing</span>
-      </aside>
-      <div class="rota">
-        <div class="rota-head">
-          <strong>Tuesday rota</strong>
-          <em>All 48 visits covered</em>
-        </div>
-        <div class="hours"><span></span>{hours.map((h) => <span>{h}:00</span>)}</div>
-        {rows.map((r) => (
-          <div class="row">
-            <span class="who">{r.name}</span>
-            <div class="track">
-              {r.visits.map(([start, len, label]) => (
-                <span class="visit" style={`grid-column:${start} / span ${len}`}>{label}</span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+    <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>Plait · Plan</span></div>
+    <img
+      src="/img/screenshots/plan.webp"
+      alt="The Plait rota for one day, showing care workers grouped by area with their visits laid out across the day"
+      width="1100" height="815"
+    />
   </div>
 
   <div class="phone">
-    <div class="notch"></div>
-    <div class="screen">
-      <small>Next visit · 09:30</small>
-      <strong>Mrs Edith M.</strong>
-      <div class="med"><span>Paracetamol 500mg</span><div class="pills"><i class="ok">✓</i><i class="later">◷</i><i class="no">✕</i></div></div>
-      <div class="med"><span>Morphine sulfate 1.5mg/5ml</span><div class="pills"><i class="ok">✓</i><i class="later">◷</i><i class="no">✕</i></div></div>
-      <div class="note">Care plan updated yesterday: see mobility changes</div>
-    </div>
+    <div class="notch" aria-hidden="true"></div>
+    <img
+      src="/img/screenshots/event-list.webp"
+      alt="The care worker app's list of today's visits, with completed visits ticked and medication due on later ones"
+      width="414" height="929"
+    />
   </div>
 </div>
 
@@ -57,45 +30,16 @@ const hours = ['07', '09', '11', '13', '15', '17'];
   .chrome { display: flex; gap: 6px; align-items: center; padding: 10px 14px; border-bottom: 1px solid var(--line); background: var(--surface-alt); }
   .chrome i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
   .chrome span { margin-left: 10px; color: var(--ink-soft); font-weight: 600; }
-  .app { display: grid; grid-template-columns: 120px 1fr; min-height: 300px; }
-  aside { display: flex; flex-direction: column; gap: 4px; padding: 14px 10px; border-right: 1px solid var(--line); color: var(--ink-soft); }
-  aside b { color: var(--magenta); font-size: 15px; margin-bottom: 8px; }
-  aside span { padding: 6px 8px; border-radius: 6px; }
-  aside .on { background: var(--magenta-soft); color: var(--magenta); font-weight: 700; }
-  .rota { padding: 14px; }
-  .rota-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
-  .rota-head strong { font-size: 15px; }
-  .rota-head em { font-style: normal; font-weight: 700; color: var(--ok-ink); background: var(--ok-bg); padding: 4px 8px; border-radius: 999px; }
-  .hours, .row { display: grid; grid-template-columns: 70px 1fr; align-items: center; }
-  .hours { grid-template-columns: 70px repeat(6, 1fr); color: var(--ink-soft); margin-bottom: 6px; }
-  .row { padding: 7px 0; border-top: 1px solid var(--line); }
-  .who { font-weight: 600; }
-  .track { display: grid; grid-template-columns: repeat(12, 1fr); gap: 3px; }
-  .visit {
-    background: var(--magenta-soft); color: var(--magenta-dark); border-left: 3px solid var(--magenta);
-    border-radius: 5px; padding: 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 600;
-  }
-  .row:nth-child(odd) .visit { background: var(--teal-bg); color: var(--teal-ink); border-left-color: var(--teal); }
+  .window img { display: block; width: 100%; height: auto; }
 
   .phone {
-    position: absolute; right: -10px; bottom: 0; width: 190px;
+    position: absolute; right: -10px; bottom: 0; width: 170px;
     background: #111; border-radius: 28px; padding: 10px; box-shadow: var(--shadow);
   }
   .notch { width: 60px; height: 6px; background: #333; border-radius: 99px; margin: 2px auto 8px; }
-  .screen { background: var(--surface); border-radius: 20px; padding: 14px 12px; font-size: 11px; line-height: 1.3; display: grid; gap: 8px; }
-  .screen small { color: var(--ink-soft); }
-  .screen strong { font-size: 14px; }
-  .med { background: var(--surface-alt); border-radius: 8px; padding: 8px; display: grid; gap: 6px; font-weight: 600; }
-  .pills { display: flex; gap: 4px; }
-  .pills i { flex: 1; text-align: center; font-style: normal; color: #fff; border-radius: 5px; padding: 3px 0; }
-  .ok { background: #1fbf5b; } .later { background: #3b82f6; } .no { background: #ef4444; }
-  .note { background: var(--note-bg); border-radius: 8px; padding: 8px; color: var(--note-ink); }
+  .phone img { display: block; width: 100%; height: auto; border-radius: 18px; }
 
   @media (max-width: 640px) {
-    .app { grid-template-columns: 1fr; }
-    aside { display: none; }
-    .phone { width: 150px; right: -4px; }
-    .hours { grid-template-columns: 60px repeat(6, 1fr); }
-    .row { grid-template-columns: 60px 1fr; }
+    .phone { width: 120px; right: -4px; }
   }
 </style>

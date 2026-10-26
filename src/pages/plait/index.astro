@@ -69,8 +69,11 @@ const lastSingle = singles.length % 2 ? singles.at(-1)!.id : null;
         </ul>
       </div>
       <div class="poc-shots">
-        <img src="/img/med-last-taken.png" alt="Plait point-of-care medication screen showing when each dose was last taken" class="shot" loading="lazy" />
-        <img src="/img/potential-overdose.png" alt="The point-of-care app warning a care worker about a potential overdose" class="shot overlay" loading="lazy" />
+        <img src="/img/screenshots/event-details.webp" alt="A visit in the care worker app, showing the client, planned times, medication due and check-in buttons" class="shot phone" width="414" height="929" loading="lazy" />
+        <div class="meds">
+          <img src="/img/med-last-taken.png" alt="Plait point-of-care medication screen showing when each dose was last taken" class="shot" loading="lazy" />
+          <img src="/img/potential-overdose.png" alt="The point-of-care app warning a care worker about a potential overdose" class="shot overlay" loading="lazy" />
+        </div>
       </div>
     </div>
   </section>
@@ -116,16 +119,19 @@ const lastSingle = singles.length % 2 ? singles.at(-1)!.id : null;
   .feature ul { margin: 0; padding-left: 1.2em; color: var(--ink-soft); }
   .feature li + li { margin-top: 6px; }
   .feature li::marker { color: var(--magenta); }
-  .feature-img { justify-self: center; border-radius: var(--radius-sm); box-shadow: var(--shadow); border: 1px solid var(--line); }
+  .feature-img { justify-self: center; max-height: 460px; width: auto; max-width: 100%; border-radius: var(--radius-sm); box-shadow: var(--shadow); border: 1px solid var(--line); }
 
   .poc { list-style: none; padding: 0; margin: 32px 0 0; display: grid; gap: 20px; }
   .poc li { padding-left: 20px; border-left: 3px solid var(--magenta); }
   .poc h3 { margin-bottom: 4px; }
   .poc p { margin: 0; color: var(--ink-soft); }
   #point-of-care .shot { margin-top: 0; }
-  .poc-shots { position: relative; padding-bottom: 120px; }
-  .poc-shots .overlay { position: absolute; right: -12px; bottom: 0; width: 58%; }
-  @media (max-width: 860px) { .poc-shots .overlay { right: 0; } }
+  .poc-shots { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 20px; align-items: start; }
+  .poc-shots .phone { width: 100%; height: auto; border-radius: 20px; }
+  .meds { display: grid; gap: 20px; margin-top: 48px; }
+  .meds img { width: 100%; height: auto; }
+  .meds .overlay { width: 72%; justify-self: end; }
+  @media (max-width: 480px) { .poc-shots { grid-template-columns: 1fr; } .poc-shots .phone { max-width: 260px; justify-self: center; } .meds { margin-top: 0; } }
 
   .standards { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(24px, 5vw, 64px); }
   @media (max-width: 860px) { .standards { grid-template-columns: 1fr; } }
